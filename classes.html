@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eggoulo(Classes)</title>
+    <link rel="stylesheet" href="navigationcontrol.css">
+    <link rel="stylesheet" href="classes.css">
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="classes.js" defer></script>
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js" defer></script>
+    <link rel="stylesheet" href="sampledsd.css">
+    <link rel="icon" type="image/x-icon" href="vector-illustration-one-fried-egg-symbol-healthy-food-breakfast-graphic-design-contour-vector-illustration-one-fried-170092872-removebg-preview.png">
+
+  </head>
+  <body>
+
+    <!-- The Modal -->
+    <div id="myModaln" class="modaln">
+
+      <!-- Modal content -->
+      <div class="modal-contentn">
+        <span class="closen">&times;</span>
+        <h2>Welcome, <span id = usernamee></span></h2>
+        <div class="news">
+        <div class="container">
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-spoon"></i></div>
+                <h3>1 Month Newsletter Subscription</h3>
+                <h4><sup>$</sup>5.73</h4>
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-coffee"></i></div>
+                <h3>12 Month/1 Year Newsletter Subscription</h3>
+                <h4><sup>$</sup>15.99</h4>
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-birthday-cake"></i></div>
+                <h3>2 - 3 Years Newsletter Subscription</h3>
+                <h4><sup>$</sup>16.00</h4>
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+          <p class="sub-details">Sign up and receive fresh EOG_G recipes every month to your inbox. As a subscriber to EOG_G, you may receive emails containing recipes, nutrition tips, contests, and promotions. </p>
+      </div>
+
+    </div></div>
+    <div id="modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <section>
+        <div class="container">
+          <div class="user signinBx">
+            <div class="imgBx"><img src="bakersbrew_classes_may2021_macarons_1x1_06.jpg" alt=""></div>
+              <div class="formBx">
+                <form class="" action="index.html" method="get">
+                  <h2>Sign In</h2>
+                  <input id="siusername" type="text"  placeholder="Username" required>
+                  <input type="password" name="pass" placeholder="Password" required minlength="8">
+                  <input type="submit" onclick="handleSubmit()" value="Log In">
+                  <p class="signup">don't have an account? <a href="#" onclick="toggleForm();">Sign up.</a> </p>
+                </form>
+              </div>
+          </div>
+
+         <div class="user signupBx">
+
+              <div class="formBx">
+                <form class="" action="form.html" method="get">
+
+                  <h2>Create an account</h2>
+                  <input class="su_username" type="text"  placeholder="Username" required>
+                  <input type="email"  placeholder="Email Address" required>
+                  <input type="password" name="pass" placeholder="Create Password" required>
+                  <input type="password" name="cpass" placeholder="Confirm Password" required>
+                  <input type="submit" value="Sign Up" onclick="signup_function()">
+                  <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign In.</a> </p>
+                </form>
+              </div>
+              <div class="imgBx"><img src="1x1__0033_bakersbrew-bakingclasses-july2022-0593.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>
+
+      </div>
+
+    </div>
+    <div id="div1" class="primary-header flex">
+      <img class="logo" height="80px" width="160px" src="images\112-removebg-preview.png" alt="Egg logo"><!-- IDEA: img scr is 112.png -->
+
+      <button id="mobile-nav-toggle"class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" type="button"><div class="menu"></div><div class="menu"></div><div class="menu"></div></button>
+          <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex" id="nav" >
+              <li class="nav"><a href="home.html">Home</a></li>
+              <li class="nav"><a href="skillsandrecipe1.html">Skills & Recipe</a></li>
+              <li class="nav current"><a href="classes.html">Schedule</a></li>
+              <li id="login" class="login"><a href="#">Login</a></li>
+            </ul>
+          </nav>
+      </div>
+      <div class="image">
+        <img src="pasta-1181189_1920.jpg" alt="">
+        <h1>Classes Schedules</h1>
+        <h4>Interllectual growth should commence at birth and cease only at death<br><br> - Albert Einstein</h4>
+      </div>
+
+      <div class="icon-bar">
+      <a target="_blank" href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a target="_blank"href="https://twitter.com/i/flow/login" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a target="_blank"href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a>
+      <a target="_blank"href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+      <a target="_blank"href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+      <div class="">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up" style="font-size:20px;color:white;background:gold;"></i></button>
+      </div>
+        <div class="main">
+          <div class="note">
+            <h3>Discover the secrets to cooking with fire and smoke.</h3>
+            <p>Some text</p>
+            <p>More exciting classes coming in August!</p>
+          </div>
+          <div id="filterSelection"><span>Filter:</span>
+            <button class="btn active" onclick="filterbutton('all')"> All Courses</button>
+            <button class="btn" onclick="filterbutton('beginner')"> Beginner</button>
+            <button class="btn" onclick="filterbutton('intermediate')"> Intermediate</button>
+            <button class="btn" onclick="filterbutton('advanced')"> Advanced</button>
+            <button class="btn" onclick="filterbutton('professional')"> Professional</button>
+          </div>
+          <div class="course one beginner">
+            <h3>Basic Grilling Techniques (Gas* or Charcoal*)</h3>
+            <p>Duration: 1.5 Hours</p>
+            <p>$100/pax</p>
+            <p>Once you’re confident with setting up your grill with different grill zones, <br>this class will focus on grilling techniques and how to evaluate the food<br>you’re planning to cook and what techniques to apply.In this class,<br> participants will have the opportunity to grill their own meats and seafood<br>to juicy perfection.</p>
+            <p style="font-weight:bold">*This class will be taught using a gas grill by default. Do let us know in<br>advance if you prefer to learn using a charcoal grill as it will take an<br>additional 30 mins to learn and set up.</p>
+            <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+            <hr>
+            <p><span>Experience Level:</span> Beginner &nbsp;&nbsp;&nbsp;&nbsp;<span>Format:</span>Theory,Interactive Demo,Taste Test</p>
+          </div>
+
+          <div class="course two intermediate">
+            <h3>Smoking Hot & Fast</h3>
+            <p>Duration: 2 Hours</p>
+            <p>$100/pax</p>
+            <p>For experienced grillers who want to expand their skillset and create smoke<br>flavor on their food. This class will touch on the main four categories of<br>smoke (grease, wood, herbs, exotic), how the size of the wood pieces affect<br>the smoking process, the color of smoke, controlling the amount of smoke<br>and the duration of the smoking process</p>
+            <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+            <hr>
+            <p><span>Experience Level:</span>Intermediate &nbsp;&nbsp;&nbsp;&nbsp;<span>Format:</span>Theory,Interactive Demo</p>
+        </div>
+
+        <div class="course three beginner">
+          <h3>Basic Cooking Techniques</h3>
+          <p>Duration: 2 Hours</p>
+          <p>$20/pax</p>
+          <p>Learn the basics theory to the different cooking techniques, Boiling,<br>Broiling, Grilling, Baking etc. You will be able to learn a total of 12<br>different cooking methods and apply it in a cooking practical.</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Beginner &nbsp;&nbsp;&nbsp;&nbsp;<span>Format:</span>Theory,Practical</p>
+        </div>
+
+        <div class="course four beginner intermediate">
+          <h3>Knife Skills</h3>
+          <p>Duration: 1.5 Hours(Beginner) & 2 Hours(Intermediate)</p>
+          <p>$20/pax(Beginner) & $50/pax(Intermediate)</p>
+          <p>When it comes to mastering the cutting skills there are many technical aspects<br> to it that only a trained chef would know.From getting the right grip on the knife<br>to cutting in precisions, there are various techniques involved when you handle<br> a knife in a professional kitchen. This is the first and foremost skill set you<br> should learn and master.</p>
+          <p style="font-weight:bold">*Note that for Beginner and Intermediate, each will be learning different things<br> and for the intermediate you will be able to do hands on more than Beginner</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Beginner & Intermediate &nbsp;&nbsp;<span>Format:</span>Interactive Demo,Practical</p>
+        </div>
+
+        <div class="course five beginner">
+          <h3>Baking & Pastry Fundamentals</h3>
+          <p>Duration: 3 Hours</p>
+          <p>$50/pax</p>
+          <p>Baking can be extremely hard as it requires practice and<br>it requires a lot of skills like the attention to details, patience under<br> pressure etc.</p>
+          <p style="font-weight:bold">For reference:<a style="text-decoration:none;font-weight:lighter;font-style:italic"href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.pearsonhighered.com/assets/preface/0/1/3/5/013524014X.pdf">A Quick guide to Baking and Pastry Fundamentals</a> </p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Beginner &nbsp;&nbsp;&nbsp;&nbsp;<span>Format:</span>Theory,Interactive Demo</p>
+        </div>
+
+        <div class="course six intermediate">
+          <h3>Evolving Ingredients and Decoration in Baking</h3>
+          <p>Duration: 5 Hours</p>
+          <p>$100/pax</p>
+          <p>Find out more on how different ingredients can help to<br>elevate the flavours and enhance the appereance to make it more eye-catching<br> to consumers. You might also get the opportunity to meet local bakery chef<br>and learn something from them</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Intermediate &nbsp;&nbsp;&nbsp;&nbsp;<span>Format:</span>Theory,Interactive Demo,Taste Test,Practical</p>
+        </div>
+
+        <div class="course seven advanced">
+          <h3>Advanced Baking Course</h3>
+          <p>Duration: 10 Hours</p>
+          <p>$200/pax</p>
+          <p>Ini this course, we will be focusing more into specific<br>dishes that having a higher difficulty.The bast of all this courses will<br>be carried out by a famous chef from Piarra Harmé. Piarra Harmé is a French<br> pastry chef and chocolatier. He began his career at the age of 13<br> as an apprentice to Gaston Lenôtre. Harmé was awarded the title of<br> World's Best Pastry Chef in 2019 by The World's 50 Best Restaurants. He<br> was also ranked the fourth most influential French person in the world<br> by Vanity Fair.</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Advanced &nbsp;&nbsp;&nbsp;&nbsp;<span>Format:</span>Practical</p>
+        </div>
+
+        <div class="course eight intermediate advanced">
+          <h3>Vegeeee</h3>
+          <p>Duration: 5 Hours</p>
+          <p>$150/pax</p>
+          <p>A meal without protein might be hard for the flavours to<br> be features but with our help, we will teach you the way of cooking<br> with only veggies and powerful flavours packed in it. Not only that,<br> you will be able to gain the experience of making artificial meat.<br>This course also teaches you Vegetarian dishes</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Intermediate & Advanced <br><br><span>Format:</span>Theory,Interactive Demo,Taste Test,Practical</p>
+        </div>
+
+        <div class="course nine beginner intermediate">
+          <h3>Becoming Egg expert</h3>
+          <p>Duration: 2 Hours</p>
+          <p>$20/pax</p>
+          <p>Egg might seems to be a small thing but with the<br> proper use of it, it can grealty affect a dish by elevating the <br>flavours and texture or just ruining the whole dish.<br> Join us today to get a egg of your life!</p>
+          <p style="font-weight:bold">*This course is mainly on the teaching of the diferent ways<br> to cook an egg and how it can be useed in different dishes.<br>We do not cover any specific egg dish but as a general.</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Beginner & Intermediate <br><br><span>Format:</span>Theory,Interactive Demo,Taste Test</p>
+        </div>
+
+        <div class="course ten intermediate advanced">
+          <h3>Foreign Cusine</h3>
+          <p>Duration: 2 Hours</p>
+          <p>$30/pax</p>
+          <p>Once you learn the basics, its time to learn skills that are outside of our<br> boundaries. Japanese, Korean, French etc. cusine is what this <br>course provides. Each of the different type of cusine requires different<br> set of skills to make.</p>
+          <p style="font-weight:bold">*Only one type of cusine is taught during each class,not all at once.</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Intermediate & Advanced<br><br><span>Format:</span>Theory,Interactive Demo,Taste Test,Practical</p>
+        </div>
+
+        <div class="course eleven advanced">
+          <h3>Desert</h3>
+          <p>Duration: 10 Hours</p>
+          <p>$50/pax</p>
+          <p>Desert is one of the thing that most people in the world enjoys.Also,lesson<br> conducted by us are fun, interactive and stress-free manner. Everyone<br> is guaranteed a whale of a time during each session!Discover all<br> variety of desert from French Desert to African<br> Desert(Mud Biscuit)</p>
+            <p style="font-weight:bold">*Only one type of cusine is taught during each class,not all at once.</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Intermediate & Advanced &nbsp;&nbsp;&nbsp;&nbsp;<span>Format:</span>Taste Test, Practical</p>
+        </div>
+
+        <div class="course twelve professional">
+          <h3>Plating Techniques</h3>
+          <p>Duration: 2 Hours</p>
+          <p>$25/pax</p>
+          <p>They contribute to the overall appearance by providing variety in taste,<br>color, shapes, and textures. Garnishes provide color and a finishing<br>touch to the dish. Choose items that are appropriate to the dish and that<br>echo some of the ingredients.</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span>Professional &nbsp;&nbsp;&nbsp;&nbsp;<span>Format:</span>Theory, Practical</p>
+        </div>
+
+        <div class="course thirteen professional">
+          <h3>World Tour</h3>
+          <p>Duration: ∞ Hours</p>
+          <p>$15880/pax</p>
+          <p>Come join us for a MONTH tour in Japan, Malaysia, Indonesia, France,<br> and Australia.Travel aboard to learn the skills and knowledge of other<br> countries' professional chefs. Also, there will be a few days allocated<br> for you to roam freely around the country to enjoy the beautiful sceneries<br>the country has to offer.</p>
+          <p style="font-weight:bold">*Everything for the trip will be covered by EOG_G including Accomodation<br>& Transportation. This tour is only available during [ January to March ] &<br>[ August to November ]. Note that different timing will result in different<br>season in the respective countries and this will affect the availability <br>of certain food.</p>
+          <p class="link" onclick="link()" style="font-style:italic;text-decoration:underline">Sign up now to book.(NO CLASSES AVAILABLE)</p>
+          <hr>
+          <p><span>Experience Level:</span> Professional &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Format:</span>Tour</p>
+        </div>
+    </div>
+
+    <div class="calender">
+      <table border="0">
+        <h2 style="margin-left:10%;text-align:left">Courses Slots, Date and Time<br><br>
+        <script type="text/javascript">
+          var date = new Date()
+          document.write(date.toDateString())
+        </script></h2>
+        <tr>
+          <th colspan="7">October 2022
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+               November 2022 >
+             </a>
+           </th>
+        </tr>
+        <tr style="background-color:white;">
+          <td>Mon</td>
+          <td>Tue</td>
+          <td>Wed</td>
+          <td>Thu</td>
+          <td>Fri</td>
+          <td>Sat</td>
+          <td>Sun</td>
+        </tr>
+
+        <tr>
+          <td class="but"></td>
+          <td class="but"></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+
+        <tr>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+        </tr>
+
+        <tr>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+        </tr>
+
+        <tr>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <h4>&nbsp;Note: No classes being held due to Spread of "Unkown - Virus"</h4>
+      <h6>&nbsp;Note: This calender is updated monthly so it will only show the classes for the specific month.First come first serve basis.</h6>
+    </div>
+    <div class="bottom">
+      <img height="100px" width="200px" src="images\112-removebg-preview.png" alt="Egg logo"><!-- IDEA: img scr is 112.png -->
+      <h3>Contact Us:</h3>
+      <p>Mobile: +65 12345678</p>
+      <p>Address: 190 Antartica Road,#03-10</p>
+      <p>Antartica 159545.</p>
+      <h3>Terms & Condition:</h3>
+      <p><a href="Terms and Condition.html" target ="_blank">Click here for more infromation</a></p>
+      <hr style="width:20%;border:1px;">
+      <p>Copyright &copy; 2022 Eggoulo Inc. All right reserved.</p>
+    </div>
+  </body>
+</html>

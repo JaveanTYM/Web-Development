@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eggoulo(S&R)</title>
+    <link rel="stylesheet" href="navigationcontrol.css">
+    <link rel="stylesheet" href="skillsandrecipe1.css">
+    <script src="skillsandrecipe1.js" defer></script>
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js" defer></script>
+    <link rel="stylesheet" href="sampledsd.css">
+    <link rel="icon" type="image/x-icon" href="vector-illustration-one-fried-egg-symbol-healthy-food-breakfast-graphic-design-contour-vector-illustration-one-fried-170092872-removebg-preview.png">
+
+  </head>
+  <body>
+    <!-- The Modal -->
+    <div id="myModaln" class="modaln">
+
+      <!-- Modal content -->
+      <div class="modal-contentn">
+        <span class="closen">&times;</span>
+        <h2>Welcome, <span id = usernamee></span></h2>
+        <div class="news">
+        <div class="container">
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-spoon"></i></div>
+                <h3>1 Month Newsletter Subscription</h3>
+                <h4><sup>$</sup>5.73</h4>
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-coffee"></i></div>
+                <h3>12 Month/1 Year Newsletter Subscription</h3>
+                <h4><sup>$</sup>15.99</h4>
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-birthday-cake"></i></div>
+                <h3>2 - 3 Years Newsletter Subscription</h3>
+                <h4><sup>$</sup>16.00</h4>
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+          <p class="sub-details">Sign up and receive fresh EOG_G recipes every month to your inbox. As a subscriber to EOG_G, you may receive emails containing recipes, nutrition tips, contests, and promotions. </p>
+      </div>
+
+    </div></div>
+    <div id="modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <section>
+        <div class="container">
+          <div class="user signinBx">
+            <div class="imgBx"><img src="bakersbrew_classes_may2021_macarons_1x1_06.jpg" alt=""></div>
+              <div class="formBx">
+                <form class="" action="index.html" method="get">
+                  <h2>Sign In</h2>
+                  <input id="siusername" type="text"  placeholder="Username" required>
+                  <input type="password" name="pass" placeholder="Password" required minlength="8">
+                  <input type="submit" onclick="handleSubmit()" value="Log In" >
+                  <p class="signup">don't have an account? <a href="#" onclick="toggleForm();">Sign up.</a> </p>
+                </form>
+              </div>
+          </div>
+
+         <div class="user signupBx">
+
+              <div class="formBx">
+                <form class="" action="form.html" method="get">
+
+                  <h2>Create an account</h2>
+                  <input class="su_username" type="text"  placeholder="Username" required>
+                  <input type="email"  placeholder="Email Address" required>
+                  <input type="password" name="pass" placeholder="Create Password" required>
+                  <input type="password" name="cpass" placeholder="Confirm Password" required>
+                  <input type="submit" value="Sign Up" onclick="signup_function()">
+                  <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign In.</a> </p>
+                </form>
+              </div>
+              <div class="imgBx"><img src="1x1__0033_bakersbrew-bakingclasses-july2022-0593.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>
+
+      </div>
+
+    </div>
+    <div id="div1" class="primary-header flex">
+      <img class="logo" height="80px" width="160px" src="images\112-removebg-preview.png" alt="Egg logo"><!-- IDEA: img scr is 112.png -->
+
+      <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" type="button"><div class="menu"></div><div class="menu"></div><div class="menu"></div></button>
+          <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex" id="nav" >
+              <li class="nav"><a href="home.html">Home</a></li>
+              <li class="nav current"><a href="skillsandrecipe1.html">Skills & Recipe</a></li>
+              <li class="nav"><a href="classes.html">Schedule</a></li>
+              <li id="login" ><a href="#">Login</a></li>
+            </ul>
+          </nav>
+      </div>
+
+    <div class="image">
+      <img src="images\Rice+Cooker+Eggs.jpg" alt="">
+      <h1>Skills and Recipes</h1>
+      <h4><span style="font-size:20px;">Mastering Eggs</span><br><br>Want to master the art of meringues or<br>learn as simple as how to poach an egg like a pro?</h4>
+    </div>
+
+    <div class="icon-bar">
+    <a target="_blank" href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a target="_blank"href="https://twitter.com/i/flow/login" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a target="_blank"href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a>
+    <a target="_blank"href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+    <a target="_blank"href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+  </div>
+    <div class="">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up" style="font-size:20px;color:white"></i></button>
+    </div>
+    <div class="back">
+      <div class="start">
+        <p><span style="font-size:15px;font-weight:bold;">Mastering Eggs is not as simple as you think!</span><br><br>
+        Do you even need a recipe to find something to do with an egg? No, not really, but why limit yourself?<br><br> With these egg recipes, you’ve got eggs prepared every way you can possibly imagine. That means baked with coconut milk and cilantro! Fried on top of fried black rice! Poached with shrimp and grits! Swirled raw into a creamy carbonara! Scrambled with tons of greens (and whatever else you find in the fridge) for a frittata. Steamed and topped with chile oil and herbs. And of course, perfectly jammy. <br><br>Shockingly, Americans once ate twice as many eggs as they do today. With this many good egg recipes to keep us craving, we’re ready to eat up.</p>
+        <iframe width="45%" height="300px" src="https://www.youtube-nocookie.com/embed/i21vwKXtcaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="skillstitle">Skills</p>
+      <div class="degreeofegg">
+        <h2 id="degreeofeggtitle">Unsure of how long you<br>need to cook your egg ?</h2>
+        <p id="degreeofeggtitle1">Heres a  quick guide:</p>
+        <p id="degreeofeggref">Reference: https://www.incredibleegg.org/</p>
+        <img id="degreeofeggimg" src="images\EggSlice_(80).png" alt="">
+      </div>
+      <p class="typeofegg_title">Different Method To Cooking Eggs</p>
+      <div class="typeofeggs">
+        <!-- NOTE: beet egg -->
+        <div class="type beetegg">
+        <img class="type_img" src="images\beet-pickled-eggs1.webp" alt="">
+        <h3>Beet Egg</h3>
+        <p>After the beet has given up its color for the eggs, it’s a great addition to a salad.</p>
+        <br><p><a class="viewmore"  target="_blank" href="https://www.bonappetit.com/recipe/beet-pickled-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: hardboil egg -->
+      <div class="type hardboil">
+      <img class="type_img" src="images\hard-boiled-eggs.webp" alt="">
+      <h3>Hard-Boiled Egg</h3>
+      <p>Cooking for 10 minutes will give an ever-so-soft center to the yolk.<a class="ref" href="https://www.bonappetit.com/story/easy-peel-hard-boiled-eggs">Read More</a>.</p>
+      <br><p><a class="viewmore"  target="_blank" href="https://www.bonappetit.com/recipe/hard-boiled-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: pickled egg -->
+      <div class="type pickled">
+      <img class="type_img" src="images\pickled-eggs.webp" alt="">
+      <h3>Pickled Egg</h3>
+      <p>Pickling the eggs in their cracked but intact shells creates a unique tie-dye effect on each one.</p>
+      <br><p><a class="viewmore" target="_blank"  href="https://www.bonappetit.com/recipe/pickled-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: scotch egg -->
+      <div class="type scotch">
+      <img class="type_img" src="images\how-to-make-a-scotch-egg-4.webp" alt="">
+      <h3>Scotch Egg</h3>
+      <p>We've fallen hard for Scotch eggs — the gastropub staple—cooked eggs swaddled in sausage meat,then breaded & fried. </p>
+      <p><a class="viewmore"  target="_blank" href="https://www.bonappetit.com/recipe/scotch-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: soymarinatedegg -->
+      <div class="type soymarinated">
+      <img class="type_img" src='images\soy-marinated-eggs.webp' alt="">
+      <h3>Soy-Marinated Egg</h3>
+      <p>What’s better than a jammy egg? One that’s been sitting in a tangy-salty marinade of chiles, soy, mirin, and vinegar.</p>
+      <br><p><a class="viewmore" target="_blank"  href="https://www.bonappetit.com/recipe/soy-marinated-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: fried egg -->
+      <div class="type fried">
+      <img class="type_img" src="images\olive-oil-basted-fried-eggs.webp" alt="">
+      <h3>Olive Oil - Basted Fried Egg</h3>
+      <p>A big soup spoon is the way to go for oil basting</p>
+      <br><p><a class="viewmore" target="_blank"  href="https://www.bonappetit.com/recipe/olive-oil-basted-fried-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: omelette -->
+      <div class="type omelette">
+      <img  class="type_img" src="images\fluffy-omelet.webp" alt="">
+      <h3>Omelette</h3>
+      <p>We try to have hard-boiled on hand, but when we're time-pressed, this omelet takes just five minutes before work</p>
+      <br><p><a class="viewmore" target="_blank"  href="https://www.bonappetit.com/recipe/fluffy-omelet">View More</a></p>
+      </div>
+      <!-- NOTE: poached -->
+      <div class="type poached">
+      <img class="type_img" src="images\poached-eggs-23.png" alt="">
+      <h3>Poached Egg</h3>
+      <p>An egg dropped from its shell.AKA Dropped Egg </p>
+      <br><p><a class="viewmore" target="_blank"  href="https://www.bonappetit.com/recipe/perfect-poached-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: sunnysideup -->
+      <div class="type sunnysideup">
+      <img class="type_img" src="images\15e75029-e7b7-40eb-9e23-a526d174c925.jpg" alt="">
+      <h3>Sunny Side Up Egg</h3>
+      <p>Can't miss a breakfast without this.</p>
+      <br><p><a class="viewmore"  target="_blank" href="https://www.jonesdairyfarm.com/brinner/how-tos/cook-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: scramble -->
+      <div class="type scramble">
+      <img class="type_img" src="images\best-scrambled-eggs-recipe-0815.jpg" alt="">
+      <h3>Scrambled Egg</h3>
+      <p>The easiest type of egg anyone can ever cook.</p>
+      <br><p><a class="viewmore"  target="_blank" href="https://www.jonesdairyfarm.com/brinner/how-tos/cook-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: over-easy -->
+      <div class="type overeasy">
+      <img class="type_img" src="images\over_easy.png" alt="">
+      <h3>Over-Easy Egg</h3>
+      <p>Just perfect</p>
+      <br><p><a class="viewmore"  target="_blank" href="https://www.jonesdairyfarm.com/brinner/how-tos/cook-eggs">View More</a></p>
+      </div>
+      <!-- NOTE: eggs paprika -->
+      <div class="type paprika">
+      <img class="type_img" src="images\eggs-paprika-aioli-sq.webp" alt="">
+      <h3>Jammy Eggs with Paprika Aioli</h3>
+      <p>Like deviled eggs—but faster, easier, more delicious, and fancier-sounding.</p>
+      <br><p><a class="viewmore" target="_blank" href="https://www.bonappetit.com/recipe/jammy-eggs-with-paprika-aioli">View More</a></p>
+      </div>
+    </div>
+    <p class="recipe_title">Recipes</p>
+      <div class="headersimple course">
+        <h3>Vietnamese Egg Coffee</h3>
+        <h4>Total Time: 20 mins</h4>
+        <h4>Servings: 4 to 6 servings</h4>
+        <p>The Vietnamese take on this treat makes for a dessert coffee,<br> a silky concoction comprised of a sweet eggy foam floating atop<br> of a cup of dark brew. Imagine a tiramisu in beverage form, and<br> you will likely get pretty close to the vibe of a good egg coffee.<br> Just a few minutes of work might make you a believer in egg<br> coffee as its delicious flavor and texture might make your morning<br> coffee look in need of that oomph.</p>
+        <button id="open0" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+        <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+        <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+        <!-- The Modal -->
+        <div id="modal_container0" class="modal">
+          <!-- Modal content -->
+          <div class="modal_content">
+            <span class="close0 cl">&times;</span>
+                <h3>Ingredients:</h3>
+                    <p>For the Foam:
+                      <ul>
+                      <li>2 large egg yolks</li>
+                      <li>1/2 cup sweetened condensed milk</li>
+                      <li>1 teaspoon pure vanilla extract</li>
+                    </ul>
+                      For the Coffee:
+                      <ul>
+                      <li>2 ounces (60 grams) French roast coffee, finely ground</li>
+                      <li>4 1/8 cups hot water</li>
+                      <li>Cocoa powder, optional</li>
+                    </ul>
+                    </p>
+                    <h3>Steps to Making It:</h3>
+                    <p>Make the Eggy Foam:
+                      <ol>
+                      <li>Gather the Ingredients</li>
+                      <li>Combine the egg yolks, condensed milk, and vanilla in the bowl of a stand mixer. Beat with the wire whisker on high for about 10 minutes.
+                        The appearance should be similar to a cake batter, not especially frothy.</li>
+                      <li>To test for the right consistency, spoon a small amount of the foam on top of a glass of water. If it floats it has the right consistency. If not, whip it for a few more minutes.</li>
+                    </ol>
+                      Assemble the Egg Coffee:
+                      <ol>
+                      <li>Brew the coffee according to your preferred method. Reserve about half a cup for later use.</li>
+                      <li>Divide the remaining brewed coffee among 4 to 6 cups. If desired, set each cup in a small bowl of hot water to prolong the warmth of the coffee.</li>
+                      <li>Gently spoon some of the whipped egg foam onto the top of each coffee, 1 to 2 tablespoons per cup.</li>
+                      <li>Pour a bit of the reserved coffee through the foam in each cup. Dust with cocoa powder if desired. Serve immediately.</li>
+                    </ol>
+                    </p>
+                  </div><!-- modal_content -->
+        </div><!-- modal_container -->
+      </div>
+
+      <div class="PEIAH course">
+        <h3>Parmesan Egg-in-a-Hole</h3>
+        <h4>Yields: 6 serving</h4>
+        <h4>Total Time: 0 Hours 20 Minutes</h4>
+        <p>The only thing better than traditional egg-in-a-hole? Adding a bit of parm.</p>
+        <button id="open1" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+        <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+        <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+        <!-- The Modal -->
+        <div id="modal_container1" class="modal">
+          <!-- Modal content -->
+          <div class="modal_content">
+            <span class="close1 cl">&times;</span>
+            <h3>Ingredients:</h3>
+            <p>
+             <ul>
+             <li>1/3 c. mayonnaise</li>
+             <li>1/4 c. grated Parmesan cheese</li>
+             <li>6 slices Texas toast-style bread</li>
+             <li>6 large eggs</li>
+             <li>kosher salt and freshly ground pepper</li>
+             <li>hot sauce, optional</li>
+           </ul>
+         </p>
+         <h3>Steps to Making It:</h3>
+         <p>
+           <ol>
+           <li>Stir together mayonnaise and cheese in a bowl. Spread on both sides of each bread slice, dividing evenly. Cut a 3-inch circle from the center of each bread slice.</li>
+           <li>Heat a large nonstick skillet over medium heat.</li>
+           <li> Working in batches, cook bread until golden brown on one side, 1 to 2 minutes. Turn and immediately crack an egg into the hole of each slice; season with salt and pepper. Reduce heat to medium-low and partially cover pan. Cook until eggs are set, about 3 to 4 minutes. </li>
+           <li>Repeat with remaining bread and eggs. Cook bread rounds until golden, about 1 to 2 minutes per side.</li>
+           <li>Serve with hot sauce, if desired.</li>
+         </ol>
+         </p>
+          </div><!-- modal_content -->
+        </div><!-- modal_container -->
+      </div>
+
+      <!-- NOTE: 2nd recipe -->
+        <div class="GE course">
+          <h3>Gingerbread Eggnog</h3>
+          <h4>Yields: 16 servings</h4>
+          <h4>Total Time: 1 Hour 25 Minutes</h4>
+          <p>You can't make eggnog without eggs, right? Make a batch of this cold-weather crowd-pleaser<br>in the winter.</p>
+          <button id="open2" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+          <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+          <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+
+          <!-- The Modal -->
+              <div id="modal_container2" class="modal">
+                <!-- Modal content -->
+                <div class="modal_content">
+                <span class="close2 cl">&times;</span>
+                  <h3>Ingredients:</h3>
+              <p>
+                <ul>
+                <li>1 c. heavy cream</li>
+                <li>1 (1-inch) piece ginger, sliced</li>
+                <li>2 tsp. pure vanilla extract</li>
+                <li>8 whole cloves, crushed</li>
+                <li>6 allspice berries, crushed</li>
+                <li>2 cinnamon sticks, broken</li>
+                <li>1/4 tsp. freshly grated nutmeg, plus more for serving</li>
+                <li>4 c. whole milk, divided</li>
+                <li>8 large eggs, separated</li>
+                <li>3/4 c. granulated sugar</li>
+                <li>Pinch kosher salt</li>
+                <li>3/4 c. to 1 c. dark rum, cognac, bourbon, or a combination</li>
+              </ul>
+              </p>
+              <h3>Steps to Making It:</h3>
+              <p>
+                <ol>
+                <li>Combine heavy cream, ginger, vanilla, cloves, allspice, cinnamon, nutmeg, and 2 cups milk in a medium saucepan. Cook over medium heat until tiny bubbles begin to appear around the edge of the pot (do not let boil), 2 to 3 minutes. Remove from heat and let steep 30 minutes.</li>
+                <li>Meanwhile, beat egg yolks with an electric mixer on medium speed until combined. Gradually beat in sugar and salt. Increase mixer speed to high and beat until thick and very pale in color, 2 to 3 minutes.</li>
+                <li>Strain spiced cream mixture, discarding spices; return to pot. Slowly whisk 1 cup warm cream mixture into yolk-sugar mixture on low speed; return to pot with cream mixture. Cook over medium heat, stirring constantly with a rubber spatula, until mixture reaches 170°F and coats the spatula, 12 to 15 minutes.</li>
+                <li>Place the pot over a large bowl filled with ice water and let cool, stirring occasionally, until chilled, 20 to 30 minutes. Stir in rum, cognac, or bourbon and remaining 2 cups milk.</li>
+                <li>Just before serving, beat egg whites with an electric mixer on medium-high speed until soft peaks form, 1 to 2 minutes; fold into eggnog. Serve topped with nutmeg.</li>
+              </ol>
+              </p>
+
+                </div><!-- modal_content -->
+              </div><!-- modal_container -->
+        </div>
+        <!-- NOTE: 3rd recipe -->
+          <div class="EDNS course">
+            <h3>Egg-Drop Noodle Soup</h3>
+            <h4>Yields: 6 serving(222 calories/serving)</h4>
+            <h4>Total Time:0 Hours 25 Minutes</h4>
+            <p>Use quick-cooking ramen and store-bought chicken broth to get<br> this hearty rendition of the Chinese-restaurant classic on the<br> table in a jiffy. Fortune cookies optional.</p>
+            <button id="open3" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+            <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+            <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+            <!-- The Modal -->
+              <div id="modal_container3" class="modal">
+                <!-- Modal content -->
+                <div class="modal_content">
+                  <span class="close3 cl">&times;</span>
+                  <h3>Ingredients:</h3>
+                <p>
+                  <ul>
+                  <li>1/2 tsp. salt</li>
+                  <li>3 package ramen noodles</li>
+                  <li>10 1/2 c. chicken broth</li>
+                  <li>1 piece ginger</li>
+                  <li>3 cloves garlic, lightly smashed</li>
+                  <li>1 tbsp. soy sauce</li>
+                  <li>3 medium carrots, peeled and sliced</li>
+                  <li>1 tbsp. sesame oil</li>
+                  <li>3 large eggs</li>
+                  <li>6 small scallions</li>
+                </ul>
+                </p>
+                <h3>Steps to Making It:</h3>
+                <p>
+                  <ol>
+                  <li>In a large pot over high heat, bring 6 cups salted water to a boil. Add noodles and cook for 3 minutes. Drain noodles and set aside. Rinse pot.</li>
+                  <li>In the same pot over medium-high heat, bring chicken broth, ginger, garlic, and soy sauce to a simmer. Add carrots and all but 2 tablespoons scallions, and cook until vegetables are tender, about 3 minutes. Use a slotted spoon to remove ginger and garlic.</li>
+                  <li>In a medium bowl, lightly beat together eggs, sesame oil, and salt. Gently stir broth, then pour seasoned eggs into pot. Let sit undisturbed until eggs are cooked, 40 to 60 seconds. Stir with a wooden spoon to break up eggs. Return noodles to pot and cook for 1 minute. Divide soup among 6 bowls and garnish with remaining scallions. Serve immediately.</li>
+                </ol>
+                </p>
+                </div><!-- modal_content -->
+              </div><!-- modal_container -->
+          </div>
+          <!-- NOTE: 4th recipe -->
+            <div class="CE course">
+                <h3>Cloud Eggs</h3>
+                <h4>Yields: 4 serving </h4>
+                <h4>Total Time: 0 Hours 20 Minutes</h4>
+                <p>This impressive dish is so much easier than it looks!</p>
+                <button id="open4" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                <!-- The Modal -->
+                  <div id="modal_container4" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal_content">
+                      <span class="close4 cl">&times;</span>
+
+                  <h3>Ingredients:</h3>
+                  <p>
+                    <ul>
+                    <li>8 large eggs</li>
+                    <li>1 c. freshly grated Parmesan</li>
+                    <li>1/2 lb. deli ham, chopped</li>
+                    <li>Kosher salt</li>
+                    <li>Freshly ground black pepper</li>
+                    <li>Freshly chopped chives, for garnish</li>
+                  </ul>
+                  </p>
+                  <h3>Steps to Making It:</h3>
+                  <p>
+                    <ol>
+                    <li>Preheat oven to 450° and grease a large baking sheet with cooking spray. Separate egg whites and yolks, placing egg whites in a large bowl and yolks in a small bowl. Using a whisk or hand mixer, beat egg whites until stiff peaks form, 3 minutes. Gently fold in Parmesan and ham and season with salt and pepper.</li>
+                    <li>Spoon 8 mounds of egg whites onto prepared baking sheet and indent centers to form nests. Bake until lightly golden, about 3 minutes. </li>
+                    <li>Carefully spoon an egg yolk into center of each nest and season with salt and pepper. Bake until yolks are just set, about 3 minutes more. </li>
+                    <li>Garnish with chives before serving.</li>
+                  </ol>
+                  <h3>TIP:</h3><h4>Our favorite way to SEPARATE EGGS is by simply cracking the egg and separating the yolk back and forth, but you can also use the water bottle hack: Crack an egg into a bowl and use an empty plastic bottle to suction the yolk inside. (It’s kinda crazy how well it works.)</h4>
+
+                    </div><!-- modal_content -->
+                  </div><!-- modal_container -->
+
+              </div>
+
+              <!-- NOTE: 5th recipe -->
+                <div class="HECBQ course">
+                  <h3 class="HECBQ_title"> Ham, Egg, and Cheese Breakfast Quesadillas</h3>
+                  <h4>Meal prep ahead of time so you can have breakfast done right every morning!<br> Less than 300 calories per serving!</h4>
+                  <p>Tired of quesadillas with plain cheese? Time to upgrade this recipe<br> with some ham and eggs.I’ve tried different versions of this dish,<br> but nothing beats the combination of ham, egg, and cheese for a breakfast quesadilla.</p>
+                  <button id="open5" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                  <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                  <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                  <!-- The Modal -->
+                  <div id="modal_container5" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal_content">
+                      <span class="close5 cl">&times;</span>
+                      <h3>Ingredients:</h3>
+                      <p>
+                        <ul>
+                        <li>1 cup Ham</li>
+                        <li>1/2 cup Blueberries</li>
+                        <li>1 cup Broccoli florets</li>
+                        <li>2 cloves Garlic</li>
+                        <li>2 Green onions</li>
+                        <li>1/2 cup Raspberries</li>
+                        <li>4 Tangerines</li>
+                        <li>4 Eggs, large</li>
+                        <li>1 Kosher salt and freshly ground black pepper</li>
+                        <li>1 tbsp Olive oil</li>
+                        <li>4 4-inch whole wheat tortilla, whole wheat</li>
+                        <li>1/2 cup Cheddar cheese, reduced fat</li>
+                      </ul>
+                      </p>
+                      <h3>Steps to Making It:</h3>
+                      <p>
+                        <ol>
+                        <li>Preheat oven to 400 degrees F. Line a baking sheet with parchment paper.</li>
+                        <li>Heat olive oil in a large skillet over medium high heat. Add garlic, and cook, stirring frequently, until fragrant, about 1 minute. Stir in ham and broccoli until broccoli is tender and bright green, about 3-4 minutes.</li>
+                        <li> Add eggs to the skillet and cook, stirring gently using a silicone or heat-proof spatula, until they just begin to set; season with salt and pepper, to taste. Continue cooking until thickened and no visible liquid egg remains, about 3-5 minutes. Stir in green onions.</li>
+                        <li>Layer half of each tortilla with the egg mixture; sprinkle with cheese. Fold in half and place onto the prepared baking sheet</li>
+                        <li>Place into oven and bake until the cheese has melted, about 5-6 minutes.</li>
+                        <li>Place quesadillas, raspberries, blueberries and tangerines into meal prep containers.*</li>
+                      </ol>
+                      <h3>NOTE:</h3><h4>*Refrigerate for up to 3 days. The quesadillas can be reheated in the microwave in 30-second intervals until heated through.</h4>
+                      </p>
+                    </div><!-- modal_content -->
+                  </div><!-- modal_container -->
+                </div>
+
+                <!-- NOTE: 6th recipe -->
+                  <div class="Q course">
+                      <h3> Quiche</h3>
+                      <h4>Yields: 6 serving </h4>
+                      <h4>Total Time: 0 Hours 50 Minutes</h4>
+                      <p>Not a fan of a crusty breakfast? You can make this recipe crustless<br> by pouring the egg mixture first right into the pan!</p>
+                      <button id="open6" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                      <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                      <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                      <!-- The Modal -->
+                          <div id="modal_container6" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal_content">
+                              <span class="close6 cl">&times;</span>
+                              <h3>Ingredients:</h3>
+                              <p>
+                                <ul>
+                                <li>1 refrigerated pie crust</li>
+                                  <li>6 large eggs</li>
+                                  <li>3/4 cup milk or cream</li>
+                                  <li>3/4 teaspoon salt</li>
+                                  <li>1/4 teaspoon black pepper</li>
+                                  <li>1 cup cooked ham chopped</li>
+                                  <li>1 1/2 cups shredded cheese divided</li>
+                                  <li>3 tablespoons green onions</li>
+
+                              </ul>
+                              </p>
+                              <h3>Steps to Making It:</h3>
+                              <p>
+                                <ol>
+                                <li>Preheat oven to 375°F.</li>
+                                <li>Unroll pie crust and press into a 9" pie plate, crimping the top edges if desired.</li>
+                                <li>In a large bowl, whisk together eggs, milk, salt and pepper. </li>
+                                <li>Sprinkle ham, 1 cup of cheese, and green onions into the pie crust and pour the egg mixture over top. Sprinkle remaining ½ cup cheese on top of egg mixture.</li>
+                                <li>Bake for 35-40 minutes until the center is completely set. Let cool for 5-10 minutes before slicing and serving.</li>
+                              </ol>
+                              <h3>TIPS:</h3><h4>Don’t forget to keep an eye on the quiche as it bakes — you don’t want the crust getting too brown on top as the eggs cook! If necessary, cover the outside ring of the crust with a bit of foil to prevent it from browning further.</h4>
+                              </p>
+                            </div><!-- modal_content -->
+                          </div><!-- modal_container -->
+                    </div>
+
+                    <!-- NOTE: 7 -->
+                      <div class="headerMain course">
+                        <h3>Croque-Madame with Cranberry-Mustard Relish</h3>
+                        <h4>Total Time: ?</h4>
+                        <h4>Servings: 4 servings</h4>
+                        <p>You know how the cheese sometimes oozes out of a grilled cheese while<br> it’s cooking and gets all brown and crunchy when it hits the<br> skillet? Well, this open-face sandwich recipe is dedicated to<br> making that happen on purpose.</p>
+                        <button id="open7" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                        <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                        <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                        <!-- The Modal -->
+                        <div id="modal_container7" class="modal">
+                          <!-- Modal content -->
+                          <div class="modal_content">
+                            <span class="close7 cl">&times;</span>
+                            <h3>Ingredients:</h3>
+                            <p>
+                              <ul>
+                              <li>1/3 cup leftover cranberry sauce</li>
+                              <li>3 tablespoons whole grain mustard</li>
+                              <li>1/2 teaspoon crushed red pepper flakes</li>
+                              <li>4 1/2-inch-thick slices Pullman or other white bread</li>
+                              <li>4 tablespoons unsalted butter, divided</li>
+                              <li>8 ounces aged white cheddar, grated (about 3 cups), divided</li>
+                              <li>8 ounces thinly sliced ham, divided</li>
+                              <li>2 teaspoons vegetable oil</li>
+                              <li>4 large eggs</li>
+                              <li>Kosher salt, freshly ground pepper</li>
+                            </ul>
+                            </p>
+                            <h3>Steps to Making It:</h3>
+                            <p>
+                              <ol>
+                              <li>Preheat oven to 350°. Mix cranberry sauce, mustard, and red pepper flakes in a small bowl. Spread relish over 1 side of each slice of bread.</li>
+                              <li>Melt 1 Tbsp. butter in a medium ovenproof nonstick skillet over medium heat. Place 1 slice of bread, plain side down, in skillet and cook until just golden on bottom side, about 2 minutes.</li>
+                              <li>Scatter ¾ cup cheese over and slightly around bread (the cheese in contact with the pan will begin to melt immediately). Transfer skillet to oven and bake until cheese is golden brown around edges, about 2 minutes. Remove skillet from oven and top bread with a few slices of ham; let sandwich cool slightly in pan 1 minute. Using a rubber spatula, carefully loosen edges of cheese and transfer sandwich to a plate. Repeat with remaining butter, bread, cheese, and ham to make 3 more sandwiches. Wipe out skillet.</li>
+                              <li>Heat oil in same skillet over medium. Crack eggs into skillet, cover, and cook until whites are just set but yolks are still runny, about 3 minutes. Top each sandwich with a fried egg; season with salt and pepper.</li>
+                            </ol>
+                            </p>
+                          </div><!-- modal_content -->
+                        </div><!-- modal_container -->
+
+                      </div>
+                      <!-- NOTE: 8th recipe -->
+                      <div class="BEWSAT course">
+                      <h3>Baked Eggs with Spinach and Tomato</h3>
+                      <h4>Total Time: 0 Hours 40 Minutes</h4>
+                      <h4>Servings: 4 (207 calories/serving)</h4>
+                      <p>A flavorful and hearty breakfast ,lunch or even easy dinner dish that's sure to impress.<p>
+                      <button id="open8" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                      <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                      <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                      <!-- The Modal -->
+                        <div id="modal_container8" class="modal">
+                          <!-- Modal content -->
+                          <div class="modal_content">
+                            <span class="close8 cl">&times;</span>
+                            <h3>Ingredients:</h3>
+                            <p>
+                              <ul>
+                              <li>2 tbsp. olive oil</li>
+                              <li>1 medium onion</li>
+                              <li>5 oz. fresh baby spinach</li>
+                              <li>1 can whole tomatoes</li>
+                              <li>1 tsp. ground cumin</li>
+                              <li>1 tsp. salt</li>
+                              <li>1 tsp. Freshly ground pepper</li>
+                              <li>1/2 tsp. sweet paprika</li>
+                              <li>2 tsp. Hot sauce</li>
+                              <li>4 large eggs</li>
+                              <li>1/4 c. Crumbled feta</li>
+                            </ul>
+                            </p>
+                            <h3>Steps to Making It:</h3>
+                            <p>
+                              <ol>
+                              <li>Preheat oven to 400 degrees F. Meanwhile, in a medium saucepan, heat oil over medium-high heat. Add onion and sauté until soft, about 5 minutes. Add spinach and sauté until just wilted, about 2 minutes. Remove from heat.</li>
+                              <li>In a medium bowl, stir together tomatoes, cumin, salt, pepper, paprika, and, if desired, hot sauce. Add onion-spinach mixture and stir to combine. Divide among 4 oiled 10-ounce ramekins.</li>
+                              <li>Crack an egg into the center of each ramekin, then sprinkle on feta. Bake until whites are set but yolks remain soft, 12 to 15 minutes.</li>
+                            </ol>
+                            </p>
+                          </div><!-- modal_content -->
+                        </div><!-- modal_container -->
+                      </div>
+                      <!-- NOTE: 9th recipe -->
+                          <div class="RPARPH course">
+                            <h3>Roasted Potato and Red Pepper Hash</h3>
+                            <h4>Total Time: 1 Hour 0 Minutes </h4>
+                            <h4>Servings: 4</h4>
+                            <p>Need to make a big brunch for a hungry crew? This satisfying skillet<br> recipe is easy and impressive<p>
+                            <button id="open9" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                            <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                            <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                            <!-- The Modal -->
+                            <div id="modal_container9" class="modal">
+                              <!-- Modal content -->
+                              <div class="modal_content">
+                                <span class="close9 cl">&times;</span>
+                                <h3>Ingredients:</h3>
+                                <p>
+                                  <ul>
+                                  <li>1 lb. Yukon gold potatoes, cut into 3/4-inch pieces </li>
+                                  <li>2 small bell peppers (1 red and 1 orange), cut into 3/4-inch pieces</li>
+                                  <li>1 red onion, cut into 1/2-inch pieces</li>
+                                  <li>4 cloves garlic, smashed</li>
+                                  <li>2 tbsp. olive oil</li>
+                                  <li>Kosher salt and freshly ground black pepper</li>
+                                  <li>8 large eggs</li>
+                                  <li>Chopped fresh flat-leaf parsley, for sprinkling</li>
+                                </ul>
+                                </p>
+                                <h3>Steps to Making It:</h3>
+                                <p>
+                                  <ol>
+                                  <li>Preheat oven to 425°F with oven rack 6 inches from heat. Toss together potatoes, peppers, onion, garlic, and oil in a 12-inch cast-iron skillet. Season with salt and pepper. Roast, stirring once, until potatoes are just tender and beginning to turn golden brown, 30 to 35 minutes.</li>
+                                  <li>Remove skillet from oven and change oven setting to broil. Make 8 small wells in vegetable mixture, and carefully crack an egg into each. Broil to desired doneness, 4 to 6 minutes for a runny yolk. Sprinkle with parsley just before serving.</li>
+                                </ol>
+                                </p>
+                              </div><!-- modal_content -->
+                            </div><!-- modal_container -->
+                          </div>
+
+                          <!-- NOTE: 10th recipe -->
+                          <div class="CEWS course">
+                            <h3>Curried Eggs With Spinach</h3>
+                            <h4>Total Time: 0 Hour 18 Minutes </h4>
+                            <h4>Servings: 4</h4>
+                            <p>Description</p>
+                            <button id="open10" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                            <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                            <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>To ensure food safety, eggs should be cooked until both the yolk<br> and the white are firm. Consuming raw or undercooked eggs may increase your<br> risk of foodborne illness, especially for those with certain medical conditions.<br> For recipes that call for eggs that are raw or undercooked when the dish is<br> served use either pasteurized shell eggs that have been treated to destroy<br> Salmonella, or use pasteurized egg products.</p>
+                            <!-- The Modal -->
+                              <div id="modal_container10" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal_content">
+                                  <span class="close10 cl">&times;</span>
+                                  <h3>Ingredients:</h3>
+                                  <p>
+                                    <ul>
+                                    <li>6 Large eggs</li>
+                                    <li>2 tsp olive oil</li>
+                                    <li>1/2 cup red onions,minced</li>
+                                    <li>1 clove garlic,minced </li>
+                                    <li>2 Tbsp of mild curry paste</li>
+                                    <li>2 cups of cherry tomatoes,halved</li>
+                                    <li>5 oz Spinach</li>
+                                    <li>Salt</li>
+                                    <li>Cilantro & lemon wedges, for garnish</li>
+                                  </ul>
+                                  </p>
+                                  <h3>Steps to Making It:</h3>
+                                  <p>
+                                    <ol>
+                                    <li>HEAT a 10″ skillet over medium heat. ADD olive oil and onion. SAUTE until onions are translucent. STIR in garlic, cooking for a minute more. STIR in curry paste and tomatoes. ADD the water. BRING to a simmer and cook for 2 minutes. STIR in the spinach a handful at a time.</li>
+                                    <li>When the spinach has wilted and tomatoes have blistered slightly, (add more water by the Tbsp., if pan is to dry) carefully CRACK eggs on top of the mixture. SIMMER over medium/low heat.</li>
+                                    <li>COVER and COOK until the egg whites are set.</li>
+                                    <li>REMOVE from heat. GARNISH with salt, cilantro and lemon wedges. SERVE with toast, pita or your favorite cooked grains.</li>
+                                  </ol>
+                                  <h3>TIP:</h3><h4>Can’t find curry paste? Use curry powder instead. Drop the amount down to 2 to 3 teaspoons. Look for a mild curry powder to help balance the flavor of the tomatoes.</h4>
+                                  </p>
+                                </div><!-- modal_content -->
+                              </div><!-- modal_container -->
+
+                          </div>
+                          <!-- NOTE:  11th recipe-->
+                          <div class="BB course">
+                            <h3>Beef Bulgogi And Kimchi And Egg Fried Rice<br></h3>
+                            <h4>Servings: 1</h4>
+                            <p>Description</p>
+                            <button id="open11" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                            <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                          <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>To ensure food safety, eggs should be cooked until both the yolk<br> and the white are firm. Consuming raw or undercooked eggs may increase your<br> risk of foodborne illness, especially for those with certain medical conditions.<br> For recipes that call for eggs that are raw or undercooked when the dish is<br> served use either pasteurized shell eggs that have been treated to destroy<br> Salmonella, or use pasteurized egg products.</p>                            <!-- The Modal -->
+                            <div id="modal_container11" class="modal">
+                              <!-- Modal content -->
+                              <div class="modal_content">
+                                <span class="close11 cl">&times;</span>
+                                <h3>Ingredients:</h3>
+                                <p>
+                                  <ul>
+                                  <li>3 large Eggs</li>
+                                  <li>2 tsp Vegetable Oil</li>
+                                  <li>3 cups of Steam Rice(Cooled)</li>
+                                  <li>1 cup of Chopped Kimchi</li>
+                                  <li>1/4 cup of Kimchi Juice</li>
+                                  <li>3 tsp Sesame Oil</li>
+                                  <li>1 1/2 pounds of Thin Sliced Steak</li>
+                                  <li>1/3 cup of Soy Sauce</li>
+                                  <li>2 1/2 Tbsp Brown Sugar</li>
+                                  <li>2 Tbsp Sesame Oil</li>
+                                  <li>3 Clove of Garlic</li>
+                                  <li>1 Tbsp Freshly Grated Ginger</li>
+                                  <li>1 Bunch of Green Onions Chopped</li>
+                                  <li>1 Tbsp of Toasted Sesame seeds</li>
+                                  <li>Sriracha (to taste)</li>
+                                </ul>
+                                </p>
+                                <h3>Steps to Making It:</h3>
+                                <p>
+                                  <ol>
+                                  <li>MARINATE steak in a large bowl with soy sauce, brown sugar, sesame oil, garlic, ginger, green onion whites and Sriracha. TOSS to coat and allow the steak to marinate for 45 minutes.</li>
+                                  <li>HEAT oil in a skillet and ADD chopped kimchi. SAUTÉ for one minute and ADD rice, kimchi juice and water. Continue to cook over medium high heat until rice begins to crisp, about 5 minutes. MOVE the rice to one side of the pan and add the eggs, mixing with a spatula until they begin to cook. STIR all ingredients together and remove from heat.</li>
+                                  <li>HEAT large skillet over high heat. ADD steak to the skillet and allow to sear on one side before using the tongs to move them around and caramelize on all sides. Once the juices have evaporated and the steak has a nice brown color, REMOVE from pan. Sprinkle with the reserved green onion tops and sesame seeds.</li>
+                                  <li>SERVE cooked steak over a bed of fried rice and ENJOY!</li>
+                                </ol>
+                                </p>
+                              </div><!-- modal_content -->
+                            </div><!-- modal_container -->
+
+                          </div>
+
+                          <!-- NOTE:  12 recipe-->
+                          <div class="PFR course">
+                            <h3>Pineapple Fried Rice</h3>
+                            <p>Thai Pineapple Fried Rice. This is a great way to use up some leftover cooked<br> rice in your fridge. Singaporean favourite dish straight from the <br>restaurant and buffet menu.</p>
+                            <button id="open12" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                            <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                            <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs<br> poses a risk of foodborne illness.</p>
+                            <!-- The Modal -->
+                            <div id="modal_container12" class="modal">
+                              <!-- Modal content -->
+                              <div class="modal_content">
+                                <span class="close12 cl">&times;</span>
+                                <h3>Ingredients:</h3>
+                                <p>
+                                  <ul>
+                                  <li>1 tbsp oil or butter</li>
+                                  <li>2-3 shallots (finely chopped)</li>
+                                  <li>3 cloves garlic (minced)</li>
+                                  <li>1 red or green chilli (deseeded and sliced thinly)</li>
+                                  <li>1 red bell pepper (diced)</li>
+                                  <li>1 egg (lightly beaten)</li>
+                                  <li>3 tbsp chicken or vegetable stock</li>
+                                  <li>3 tbsp fish sauce</li>
+                                  <li>1/2 tbsp turmeric powder</li>
+                                  <li>1/2 tbsp curry powder</li>
+                                  <li>1 tsp sugar</li>
+                                  <li>1/2 cup roasted unsalted cashews</li>
+                                  <li>3 cups cooked white rice (preferably cold, if fresh, leave for an hour or more in the refrigerator uncovered)</li>
+                                  <li>1 cup fresh pineapple (discard the tough and bitter core, cut into chunks)</li>
+                                  <li>8-12 fresh shrimp/prawns (cooked, shelled and deveined)</li>
+                                  <li>1/4 cup mixed vegetables (fresh or frozen)</li>
+                                  <li>1/4 cup raisins</li>
+                                  <li>Chicken floss for garnishing</li>
+                                  <li>1 stalk spring onions (sliced)</li>
+                                  <li>1/4 cup fresh coriander (chopped)</li>
+                                </ul>
+                                </p>
+                                <h3>Steps to Making It:</h3>
+                                <p>
+                                  <ol>
+                                  <li>Crumble the cold rice between your fingers to separate the grains, and set aside.</li>
+                                  <li>Add oil to hot wok and spread it around.</li>
+                                  <li>Add the shallots, garlic, chillies and bell pepper and stir-fry until fragrant, about a minute.</li>
+                                  <li>Add the beaten egg and scramble for a minute.</li>
+                                  <li>Add in chicken stock, fish sauce, curry, turmeric powder and sugar and stir-fry.</li>
+                                  <li>Add cashews and do a few quick stirs.</li>
+                                  <li>Stir in rice, break up any lumps and stir-fry until rice is heated thoroughly, about 3 minutes.</li>
+                                  <li>Add pineapple chunks, prawns, mix vegetables and raisins and stir-fry to mix them in.</li>
+                                  <li>When all ingredients are properly and thoroughly mixed, dish up the rice onto a serving plate and garnished with chicken floss, chopped green onions and cilantro.</li>
+                                </ol>
+                                <h3>ALERT!!!!</h3><h4>The above ingredient is for Thai Pineapple Fried Rice</h4>
+                                </p>
+
+                              </div><!-- modal_content -->
+                            </div><!-- modal_container -->
+                          </div>
+
+                          <!-- NOTE: 13th recipe -->
+                            <div class="CCM course">
+                            <h3>Classic Chocolate Mousse</h3>
+                            <h4>Serving:</h4>
+                            <h4>Total Time: </h4>
+                            <p>Stunning dinner party desserts don't get better than this!</p>
+                            <button id="open13" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                            <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                            <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a <br>risk of foodborne illness.</p>
+                            <!-- The Modal -->
+                                <div id="modal_container13" class="modal">
+                                  <!-- Modal content -->
+                                  <div class="modal_content">
+                                    <span class="close13 cl">&times;</span>
+                                    <h3>Ingredients:</h3>
+                                    <p>
+                                      <ul>
+                                        <li>100g classic 74% dark chocolate, chopped, plus extra shards to decorate (optional)</li>
+                                        <li>25g butter, cubed</li>
+                                        <li>3 large eggs, separated</li>
+                                        <li>2 tbsp caster sugar</li>
+                                        <li>2 tbsp whipping cream (optional)</li>
+                                    </ul>
+                                    </p>
+                                    <h3>Steps to Making It:</h3>
+                                    <p>
+                                      <ol>
+                                      <li>Put the chocolate, butter and 75ml warm water (see tip, below) in a heatproof bowl set over a pan of barely simmering water. Push the chocolate and butter gently into the warm water with a wooden spoon to help it melt, but avoid stirring too much. Once three-quarters of the butter and chocolate is melted, remove the bowl from the heat. Stir until melted, smooth and glossy. Set aside until lukewarm.</li>
+                                      <li>Working quickly, use a spatula to stir the egg yolks into the chocolate mixture, one at a time. In a separate bowl, use an electric whisk to whip the egg whites to soft peaks, then gradually add the sugar, whisking, until stiff peaks form.</li>
+                                      <li>Gently fold about a fifth of the egg whites into the chocolate mixture, then fold in the rest, being careful not to knock out the air bubbles. Pour into wine or dessert glasses, cover with clingfilm and chill overnight to set.</li>
+                                      <li>When ready to serve, whip the cream (if using) to soft peaks. Top each glass with a spoonful of cream and decorate with chocolate shards, if you like.</li>
+                                    </ol>
+                                    <h3>TIPS:</h3><h4> For the ideal warm water temperature, mix one-third boiling water with two-thirds cold water.</h4>
+                                    </p>
+                                  </div><!-- modal_content -->
+                                </div><!-- modal_container -->
+                          </div>
+                          <!-- NOTE: 14th recipe -->
+                            <div class="SSC course">
+                                <h3>S'mores Swirl Cake</h3>
+                                <h4>Yield: 15 cups</h4>
+                                <h4>Total Time:2 Hours 35 Minutes </h4>
+                                <p>What makes this light-as-air Bundt cake so springy, exactly?<br> That would be four large eggs, of course.</p>
+                                <button id="open14" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                                <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                                <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                                <!-- The Modal -->
+                            <div id="modal_container14" class="modal">
+                              <!-- Modal content -->
+                              <div class="modal_content">
+                                <span class="close14 cl">&times;</span>
+                                <h3>Ingredients:</h3>
+                                <p>
+                                  <ul>
+                                  <li>Nonstick baking spray, for pan</li>
+                                    <li>2 c. all-purpose flour, spooned and leveled</li>
+                                    <li>2 1/4 tsp. baking powder</li>
+                                    <li>1 1/2 tsp. kosher salt </li>
+                                    <li>3/4 c. (1 1/2 sticks) unsalted butter, at room temperature</li>
+                                    <li>1 1/2 c. sugar</li>
+                                    <li>4 large eggs, at room temperature</li>
+                                    <li>1 tbsp. pure vanilla extract</li>
+                                    <li>3/4 c. whole milk </li>
+                                    <li>1/2 c. unsweetened cocoa, sifted</li>
+                                    <li>1/2 c. fine graham cracker crumbs (from about 2 1/2 crackers)</li>
+                                    <li>Chocolate sauce, crushed graham crackers, and mini marshmallows, for serving</li>
+
+                                </ul>
+                                </p>
+                                <h3>Steps to Making It:</h3>
+                                <p>
+                                  <ol>
+                                  <li>Preheat oven to 350°F with rack in the middle position. Coat a 10- to 12-cup Nordic Ware Heritage Bundt pan with baking spray. Whisk together flour, baking powder, and salt in a bowl.</li>
+                                  <li>Beat butter and sugar with an electric mixer on medium speed until light and fluffy, 2 to 4 minutes. Add eggs, one at a time, beating to incorporate after each addition. Beat in vanilla. Reduce mixer speed to low and beat in flour mixture and milk alternately, beginning and ending with flour mixture.</li>
+                                  <li>Transfer half the batter to a second bowl. Add cocoa; stir until fully incorporated. Fold graham crumbs into remaining batter. Transfer batters to separate plastic zip-top or pastry bags. Cut a 3/4-inch opening in one corner of each bag. Pipe alternating batters into grooves of prepared pan. Squeeze remaining batter in piles on top, alternating colors, then swirl with a butter knife.</li>
+                                  <li>Bake until a toothpick inserted into the center comes out clean, 50 to 60 minutes. Cool in pan on a wire rack for 15 minutes, then invert onto a wire rack to cool. Drizzle with chocolate sauce and sprinkle with graham crackers and marshmallows.</li>
+                                </ol>
+                                </p>
+                              </div><!-- modal_content -->
+                            </div><!-- modal_container -->
+                            </div>
+
+                            <!-- NOTE: 15th recipe -->
+                              <div class="HSSD course">
+                              <h3>Havarti Soufflé with Scallions and Dill</h3>
+                              <h4>Serving: 6 (374 cal/serv)</h4>
+                              <h4>Total Time: 1 Hour 50 Minutes </h4>
+                              <p>Egg whites, beaten into stiff peaks, give this savory main dish its heavenly loft;<br> cheese, fresh dill, and roasted peppers provide the irresistible flavor.<br> Plus, a serving has just 374 seriously worth-it calories.<p>
+                              <button id="open15" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                              <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                              <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                              <!-- The Modal -->
+                              <div id="modal_container15" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal_content">
+                                  <span class="close15 cl">&times;</span>
+                                  <h3>Ingredients:</h3>
+                                  <p>
+                                    <ul>
+                                      <li>1 red bell pepper</li>
+                                      <li>5 tbsp. butter</li>
+                                      <li>3 tbsp. breadcrumbs</li>
+                                      <li>1 1/2 c. milk</li>
+                                      <li>1 clove garlic</li>
+                                      <li>1 bay leaf</li>
+                                      <li>1/4 c. flour</li>
+                                      <li>1/2 tsp. salt</li>
+                                      <li>1/2 tsp. freshly ground pepper</li>
+                                      <li>5 large egg yolks, beaten; plus 7 large egg whites</li>
+                                      <li>2 c. grated Havarti cheese (about 8 ounces)</li>
+                                      <li>2 large scallions, thinly sliced (about 2/3 cup)</li>
+                                      <li>2 tbsp. chopped fresh dill, plus more for garnish, if desired</li>
+
+                                  </ul>
+                                  </p>
+                                  <h3>Steps to Making It:</h3>
+                                  <p>
+                                    <ol>
+                                    <li>Roast pepper directly under broiler or over an open flame, turning it frequently, until blistered and blackened on all sides, 6 to 8 minutes. Transfer pepper to a large bowl, cover tightly with plastic wrap, and let sit for 20 minutes to steam. When cool enough to handle, remove plastic wrap and use a paring knife to peel off skin. Slit pepper down one side; remove stem and seeds. Finely chop pepper and set aside.</li>
+                                    <li>Preheat oven to 375°F, with a rack in the lower third of the oven. Coat an 8-cup (2-quart) soufflé dish or casserole, at least 4 inches deep, with 1 tablespoon butter. Dust with breadcrumbs; shake out any excess. Set aside. In a medium pot over medium-high heat, bring milk, garlic, and bay leaf to a simmer. Reduce heat to low. In another medium pot over medium heat, melt remaining butter. Whisk in flour and cook for 3 minutes. Use a slotted spoon to remove garlic and bay leaf from milk mixture; then, while continuously whisking, add the milk to the butter-flour mixture in a slow, steady stream. Cook until mixture thickens and begins to boil, about 5 minutes. Remove from heat, and add salt and pepper; stir.</li>
+                                    <li>In a medium bowl, temper egg yolks by whisking in a cup of the milk-flour mixture in a slow, steady stream. Continuing to whisk, transfer tempered yolks in a slow, steady stream to remaining milk-flour mixture. Stir in cheese until melted, and transfer mixture to a large bowl. Stir in scallions, dill, and reserved red pepper.</li>
+                                    <li>In a medium bowl, using an electric mixer on medium-high speed, beat egg whites to stiff but not dry peaks. Using a spatula, stir one-third of the egg whites into the cheese mixture, then fold in remaining whites. Pour into prepared dish. Bake until soufflé is golden brown and has risen about 3 inches, and a toothpick inserted into the center comes out clean, 40 to 45 minutes. (Do not open oven door until soufflé has baked at least 30 minutes.) Garnish with dill, if desired. Serve immediately.</li>
+                                  </ol>
+                                  </p>
+
+                                </div><!-- modal_content -->
+                              </div><!-- modal_container -->
+                            </div>
+
+                            <!-- NOTE: 16th recipe -->
+                              <div class="PSRB course">
+                              <h3>Pandan Swiss Roll with Buttercream</h3>
+                              <h4>Serving: 4-6</h4>
+                              <h4>Total Time:1 Hour 30 Minutes </h4>
+                              <p>Eggs play a critical role in the creation of delicious cakes and<br> pastries – the fresher the egg, the better the flavour.<br>Using fresh local farmed eggs, we have whipped up a Pandan Swiss<br> Roll that is both fluffy and moist, and sure to be a hit with<br> your friends and family!</p>
+                              <button id="open16" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                              <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                              <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a<br> risk of foodborne illness.</p>
+                              <!-- The Modal -->
+                              <div id="modal_container16" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal_content">
+                                  <span class="close16 cl">&times;</span>
+                                  <h3>Ingredients:</h3>
+                                  <p>
+                                    <ul>
+                                    <li>4 locally farmed eggs</li>
+                                      <li>50g corn oil</li>
+                                      <li>70ml coconut cream</li>
+                                      <li>150ml water</li>
+                                      <li>20 pandan leaves</li>
+                                      <li>100g caster sugar</li>
+                                      <li>⅛ tsp salt</li>
+                                      <li>120g cake flour</li>
+                                      <li>160g unsalted butter</li>
+                                      <li>1 tbsp icing sugar</li>
+                                      <li>A pinch of salt</li>
+
+                                  </ul>
+                                  </p>
+                                  <h3>Steps to Making It:</h3>
+                                  <p>
+                                    <ol>
+                                    <li>Line a baking tray (11 inches by 14 inches) with baking paper and set aside.</li>
+                                    <li>Cut and blend pandan leaves with 150ml of water into a fine paste, Strain and extract pandan juice with a nut milk bag. Set aside 50ml of pandan juice.</li>
+                                    <li>Separate the yolks and whites from 4 eggs. Set them each in a mixing bowl</li>
+                                    <li>Whisk corn oil, coconut cream, 20g caster sugar and salt together until well combined. Add pandan juice and mix well</li>
+                                    <li>Sift in cake flour and whisk until well mixed, followed by egg yolks. Whisk until well combined and set aside.</li>
+                                    <li>Whisk egg white until foamy and slowly whisk in 80g of caster sugar. Whisk until stiff peaks form</li>
+                                    <li>Fold ⅓ of the egg white into the pandan batter. Do the same with the other ⅓ portion. For the final ⅓ portion, transfer mixture to incorporate with the meringue and fold until well combined. Do not overfold</li>
+                                    <li>Spread the batter out evenly onto the lined baking tray.  Knock the tray to get rid of any air bubbles.</li>
+                                    <li>Bake in a preheated oven at 150°C for 10 minutes. Then bake for another 10 minutes at 180°C.</li>
+                                    <li>Once the cake is out of the oven, give it a knock to prevent shrinkage</li>
+                                    <li>Immediately turn the cake over to peel off the baking sheet.</li>
+                                    <li>Trim all 4 sides of the cake.</li>
+                                    <li>Roll the cake into a cylinder form while it’s still warm to prevent cracks in between. Transfer to the fridge for 15 minutes</li>
+                                    <li>Mix butter with sugar and a pinch of salt. Whisk butter until soft, pale & creamy.</li>
+                                    <li>Take the cake out from the fridge and unroll the cake.</li>
+                                    <li>Apply buttercream and roll. Tighten the roll and refrigerate for another 15 minutes before cutting into slices. Trim off both ends before serving</li>
+                                  </ol>
+                                  </p>
+                                </div><!-- modal_content -->
+                              </div><!-- modal_container -->
+                            </div>
+
+                            <!-- NOTE: 17th recipe -->
+                              <div class="OFECT course">
+                              <h3>Old-Fashioned Egg Custard Tarts</h3>
+                              <h4>Serving:</h4>
+                              <h4>Total Time: </h4>
+                              <p>Egg custard tarts have been around for decades, and people just keep making <br>them because of how incredible they are.They’re simple to construct and <br>have a lightly sweet but mild flavor and a buttery, flaky crust that’ll make you<br> groan with pleasure. You can enjoy them as they are or add a few of your<br> favorite berries to the top. </p>
+                              <button id="open17" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                              <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                              <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                              <!-- The Modal -->
+                              <div id="modal_container17" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal_content">
+                                  <span class="close17 cl">&times;</span>
+                                  <h3>Ingredients:</h3>
+                                  <p>
+                                    <ul>
+                                    <li>1 1/2 cups (180g) all-purpose/plain flour</li>
+                                      <li>1/4 teaspoon salt</li>
+                                      <li>8 tablespoons (120g) unsalted butter, cold</li>
+                                      <li>2 tablespoons (25g) granulated/caster sugar</li>
+                                      <li>1 large egg yolk</li>
+                                      <li>1 1/2 cups (350 ml) whole/full fat milk</li>
+                                      <li>6 large egg yolks</li>
+                                      <li>1/4 cup (45 grams) granulated/caster sugar</li>
+                                      <li>1 teaspoon grated nutmeg</li>
+                                      <li>4 tablespoons butter, softened</li>
+                                  </ul>
+                                  </p>
+                                  <h3>Steps to Making It:</h3>
+                                  <p>
+                                    <ol>
+                                    <li>To a mixing bowl, add the flour, salt and butter. Rub the butter between your fingers, incorporating the dough until it resembles fine breadcrumbs. Stir in the sugar, egg yolk and 2 teaspoons water. Mix until the dough comes together in a ball.</li>
+                                    <li>Wrap in plastic wrap and refrigerator for 30 minutes.Preheat oven to 400°F/200°C.</li>
+                                    <li>To a mixing bowl, vigorously whisk (or use a hand blender) the egg yolks and sugar until pale and bubbly. Remove the milk from the heat and very slowly drizzle into the egg yolks while whisking. Transfer the mix to a container with a spout.</li>
+                                    <li>Rub softened butter inside 12, 2 3/4" (7cm) fluted tart molds and place onto a large baking sheet.</li>
+                                    <li>When the dough is chilled, roll out onto a floured surface. Use a round cookie cutter and cut circles. Place each circle in the molds and press to fit.</li>
+                                    <li>Carefully fill each tart shell with the cutard and add a light sprinkling of grated nutmeg over each.</li>
+                                    <li>Bake for 10-15 minutes, then turn the temperature down to 350°F/180°C for further 10 minutes. Keep an eye on them the first 10 minutes. You will see the filling start to rise, if it starts to rise up too much, turn down the heat. If not, they will rise too much and the custard will deflate and sink when cooled.</li>
+                                  </ol>
+                                  </p>
+                                </div><!-- modal_content -->
+                              </div><!-- modal_container -->
+                            </div>
+                            <!-- NOTE: 18th recipe -->
+                              <div class="JJC course">
+                                <h3>Jiggly Japanese Cheesecake</h3>
+                                <h4>Serving:</h4>
+                                <h4>Total Time: </h4>
+                                <p>Among other things, the recipe calls for cream cheese and <br>lemon juice, so it has a bright, tangy taste, and you can<br> improve on that by topping it with all of your favorite berries. </p>
+                                <button id="open18" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                                <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                                <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                                <!-- The Modal -->
+                                <div id="modal_container18" class="modal">
+                                  <!-- Modal content -->
+                                  <div class="modal_content">
+                                    <span class="close18 cl">&times;</span>
+                                    <h3>Total Time: </h3>
+                                    <h3>Ingredients:</h3>
+                                    <p>
+                                      <ul>
+                                      <li>Cream cheese – the main ingredient of this recipe. Use full fat cream cheese, with at least 30% fat (check nutritional label). </li>
+                                        <li>Lemon juice – used to add a tangy flavour to the cheesecake. This can also be replaced with vanilla extract for a more subtle taste.</li>
+                                        <li>Eggs – really important for helping the soufflé cheesecake rise. I recommend using large eggs, free-range or organic. For a more stable meringue, use chilled eggs. </li>
+                                        <li>Cake flour – is essential to yield an extra soft cake. As Japanese cheesecakes are so delicate, cake flour cannot be replaced with all purpose or self-rising flour. </li>
+                                        <li>Sugar – used to add sweetness and help the meringue become more stable. This cake is not overly sweet, but the sugar can be adjusted slightly for a sweeter cheesecake. Alternatively, dust the cake with icing sugar. </li>
+                                    </ul>
+                                    </p>
+                                    <h3>Steps to Making It:</h3>
+                                    <p>
+                                      <ol>
+                                      <li>Combine the cream cheese, melted butter and hot milk in a large bowl. Whisk well until the mixture becomes like a creamy paste. If the cream cheese is too lumpy, heat gently over a double boiler. </li>
+                                      <li>Mix in the egg yolks into the cream cheese mixture, then sieve in the flour. Combine everything with a whisk or spatula. Sieve the mixture again if there are any lumps of flour. </li>
+                                      <li>Whip the egg whites and pour in the lemon juice once the mixture becomes frothy. </li>
+                                      <li>Incorporate the sugar into the egg whites slowly, in thirds. Continue mixing until the meringue reaches soft-medium peaks. </li>
+                                      <li>Fold in one third of the meringue into the cake batter. Add in the remaining meringue without deflating too much air, using a spatula. To combine, use a sweeping motion to fold the batter in on itself. It’s important to not deflate too much air from the meringue. </li>
+                                      <li>Pour the cake batter into the lined pan, then prepare to bake.</li>
+                                      <li>The outside of the springform pan needs to be covered with aluminum foil to prevent water from seeping in. I recommend using two or three layers of foil. </li>
+                                      <li> Place the cake pan into a deeper, larger pan. Pour boiling water into the larger pan, around 1-inch in height. </li>
+                                      <li>Bake the cheesecake in a pre-heated oven for 30 minutes, then open the oven door for to release some steam. Releasing some steam prevents the cheesecake from becoming too soft.</li>
+                                      <li>Reduce the oven temperature to and bake for an additional 30 minutes. As this cheesecake is so soft, the skewer test will not be as effective. The cheesecake will be ready when it has a slight wobble, but it’s golden-brown on top.</li>
+                                    </ol>
+                                    <h3>TIPS:</h3><h4>Do not add all the sugar at once. Pouring all the sugar in can deflate the meringue. Add the sugar in thirds every 30 seconds, whilst mixing</h4>
+                                    </p>
+                                  </div><!-- modal_content -->
+                                </div><!-- modal_container -->
+                              </div>
+                              <!-- NOTE: 19th recipe -->
+                                <div class="WCM course">
+                                <h3>White Chocolate Mousse</h3>
+                                <h4>Serving: 8</h4>
+                                <h4>Total Time: 30 Minutes</h4>
+                                <p>It’s silky smooth, cool, and wonderfully sweet, and you can top<br>it with chocolate sprinkles, toffee bits, or anything else you like. </p>
+                                <button id="open19" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                                <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                                <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                                <!-- The Modal -->
+                                <div id="modal_container19" class="modal">
+                                  <!-- Modal content -->
+                                  <div class="modal_content">
+                                    <span class="close19 cl">&times;</span>
+                                    <h3>Ingredients:</h3>
+                                    <p>
+                                      <ul>
+                                      <li>4 Egg Yolks</li>
+                                        <li>1/4 cup Granulated Sugar</li>
+                                        <li>1 cup Heavy Whipping Cream</li>
+                                        <li>1 cup White Baking Chips</li>
+                                        <li>1 1/2 cups heavy whipping cream, chilled</li>
+                                        <li>White, milk, or dark chocolate curls, optional</li>
+                                    </ul>
+                                    </p>
+                                    <h3>Steps to Making It:</h3>
+                                    <p>
+                                      <ol>
+                                      <li>Chill a medium mixing bowl in the refrigerator. </li>
+                                      <li>In a medium bowl, beat the egg yolks with an electric mixer at high speed until thick and pale, about 3 minutes. Gradually beat in the sugar until combined.</li>
+                                      <li>Warm (not boil) 1 cup of cream in a 2-quart saucepan over medium heat. Reduce heat, add baking chips, and stir until melted. Cover saucepan and refrigerate for 2 hours, stirring occasionally, until chilled.</li>
+                                      <li> Pour 1 ½ cups of cream in the chilled bowl. Beat with an electric mixer at high speed until stiff peaks form, about 5 minutes. </li>
+                                      <li>Using a rubber spatula, gently combine the chilled mixture with the whipped cream u, careful not to deflate the cream. </li>
+                                      <li>Cover the glasses with plastic wrap and refrigerate. Enjoy!</li>
+                                    </ol>
+                                    <h3>TIPS:</h3><h4>If white chocolate is too sweet for you, balance it out with a pinch of salt.</h4>
+                                    </p>
+
+                                  </div><!-- modal_content -->
+                                </div><!-- modal_container -->
+                              </div>
+
+                              <!-- NOTE: 20th recipe -->
+                                <div class="BCCM course">
+                                    <h3>Banana Chocolate Chunk Muffins</h3>
+                                    <h4>Serving: 4</h4>
+                                    <h4>Total Time:30 Minutes </h4>
+                                    <p>Who doesn’t love a good muffin? This one combines banana and chocolate<br> — the ultimate breakfast duo. It’s crowd-friendly and definitely <br>kid-friendly, too!</p>
+                                    <button id="open20" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                                    <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                                    <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                                    <!-- The Modal -->
+                                    <div id="modal_container20" class="modal">
+                                      <!-- Modal content -->
+                                      <div class="modal_content">
+                                        <span class="close20 cl">&times;</span>
+                                        <h3>Ingredients:</h3>
+                                        <p>
+                                          <ul>
+                                          <li>2 large ripe bananas (mashed)</li>
+                                            <li>3/4 cup natural almond butter</li>
+                                            <li>1/4 cup real maple syrup</li>
+                                            <li>1 large egg</li>
+                                            <li>1 teaspoon vanilla extract</li>
+                                            <li>1 Tablespoon coconut flour</li>
+                                            <li>1/4 teaspoon baking soda</li>
+                                            <li>1/4 teaspoon salt</li>
+                                            <li>1 (3-oz.) bar unsweetened baking chocolate (chopped into small chunks)</li>
+
+                                        </ul>
+                                        </p>
+                                        <h3>Steps to Making It:</h3>
+                                        <p>
+                                          <ol>
+                                          <li>Pre-heat oven to 350°F and line a 12-muffin cup tin with 8 paper liners.</li>
+                                          <li>In a large mixing bowl, combine the bananas, almond butter, maple syrup, egg, and vanilla extract. Whisk briskly into a fairly smooth batter</li>
+                                          <li>Add the coconut flour, baking soda, and salt and stir to combine. Fold in the chocolate chunks until evenly distributed throughout the batter</li>
+                                          <li>Divide the batter between the 8 muffin cups and place in the pre-heated oven to bake until cooked through and puffy, approximately 18-20 minutes. A toothpick inserted into the center should come out clean.</li>
+                                          <li>Remove from oven and allow muffins to cool for 10-15 minutes before removing from the muffin tin to serve. Enjoy!</li>
+                                        </ol>
+                                        </p>
+
+                                      </div><!-- modal_content -->
+                                    </div><!-- modal_container -->
+                                  </div>
+                          <!-- NOTE: 21th recipe -->
+                          <div class="SMBS course">
+                            <h3>Swirled Meringues with Blueberry Sauce</h3>
+                            <h4>Serving: 8</h4>
+                            <h4>Total Time:13 Hours 0 Minutes</h4>
+                            <p>Traditional meringues are usually made with just two ingredients.<br> One of them is egg whites—this one calls for four large ones.</p>
+                            <button id="open21" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                            <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                            <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                            <!-- The Modal -->
+                            <div id="modal_container21" class="modal">
+                              <!-- Modal content -->
+                              <div class="modal_content">
+                                <span class="close21 cl">&times;</span>
+                                <h3>Ingredients:</h3>
+                                <p>
+                                  <ul>
+                                  <li>1/2 c. blueberry preserves</li>
+                                    <li>1 c. granulated sugar</li>
+                                    <li>1 tbsp. cornstarch</li>
+                                    <li>4 large egg whites, at room temperature</li>
+                                    <li>1/4 tsp. cream of tartar</li>
+                                    <li>Pinch kosher salt</li>
+                                    <li>1/4 tsp. pure vanilla extract</li>
+                                    <li>1 1/4 c. whipping cream</li>
+                                    <li>1 tbsp. confectioners’ sugar</li>
+                                    <li>1/4 c. sugar</li>
+                                    <li>1 1/2 tsp. cornstarch</li>
+                                    <li>Pinch kosher salt</li>
+                                    <li>1 1/2 c. fresh blueberries</li>
+                                    <li>1/4 c. water</li>
+                                    <li>1 tbsp. fresh lemon juice</li>
+                                    <li>1/2 tsp. pure vanilla extract</li>
+
+                                </ul>
+                                </p>
+                                <h3>Steps to Making It:</h3>
+                                <p>
+                                  <ol>
+                                  <li>Preheat oven to 225°F. Line a baking sheet with parchment. Microwave preserves in a microwave-safe dish until just warm, about 30 seconds. Pour through a fine wire-mesh strainer into a bowl; discard solids.</li>
+                                  <li>Whisk together granulated sugar and cornstarch in a bowl. Beat egg whites on medium-high speed with an electric mixer, until foamy, about 1 minute. Add cream of tartar and salt, beating until blended. Reduce mixer speed to medium and gradually add sugar mixture, 1 tablespoon at a time, beating until mixture is glossy, stiff peaks form, and sugar dissolves,1 to 2 minutes. Beat in vanilla.</li>
+                                  <li>Drizzle one-quarter of preserves in a zigzag pattern onto meringue. Scoop 2 portions of meringue mixture (about 1/3 cup each) onto prepared baking sheet. Make an indentation in center of each meringue to hold filling. Repeat procedure 3 more times.</li>
+                                  <li>Bake until pale golden and outsides have formed a crust, 1 hour 15 minutes to 1 hour 30 minutes. Turn oven off; let meringues stand in oven, with door closed and light on, 12 hours</li>
+                                  <li>Beat cream and confectioners’ sugar with an electric mixer on high speed until medium peaks form, about 1 minute. Fill meringues with whipped cream and Blueberry Sauce. Serve immediately.</li>
+                                  <li>For the blueberry sauce, stir together sugar, cornstarch, and salt in a medium saucepan. Stir in fresh blueberries, water, and fresh lemon juice. Bring to a boil over medium-high heat, and cook, stirring often, until a few blueberries pop, 1 to 2 minutes. Remove from heat, and stir in vanilla extract. Cool completely.</li>
+                                </ol>
+                                </p>
+
+                              </div><!-- modal_content -->
+                            </div><!-- modal_container -->
+                          </div>
+
+                          <!-- NOTE: 22th recipe -->
+                            <div class="P course">
+                            <h3>Pancake</h3>
+                            <h4>Serving: 6</h4>
+                            <h4>Total Time: 15 Minutes</h4>
+                            <p>There’s just something about a stack of soft, fluffy pancakes topped with warm syrup.<br>If this fluffy breakfast treat is what you’re looking for, we’ve got some good news.<br> You can actually make your very own Cracker Barrel pancakes! Follow this recipe<br> and enjoy this delicious breakfast at home.</p>
+                            <button id="open22" class="buttons" type="button" name="button"><i class="fa fa-spoon" style="font-size:12px;"></i>&nbspView Recipe</button>
+                            <hr style="width:50%;margin-left:0;border:solid 1px gainsboro;background:gainsboro;">
+                            <p><i class="fa fa-exclamation-triangle"></i><span style="font-weight:bold"> Warning:</span>Consuming raw and lightly cooked eggs poses a risk of foodborne illness.</p>
+                            <!-- The Modal -->
+                            <div id="modal_container22" class="modal">
+                              <!-- Modal content -->
+                              <div class="modal_content">
+                                <span class="close22 cl">&times;</span>
+                                <h3>Ingredients:</h3>
+                                <p>
+                                  <ul>
+                                  <li>2 cups flour (measured with a spoon, not sifted)</li>
+                                    <li>2 teaspoons baking soda</li>
+                                    <li>1 teaspoon salt</li>
+                                    <li>3 Tablespoons granualted sugar</li>
+                                    <li>2 eggs</li>
+                                    <li>2 1/3 cups low fat buttermilk (1% or less)</li>
+                                    <li>butter for cooking</li>
+                                </ul>
+                                </p>
+                                <h3>Steps to Making It:</h3>
+                                <p>
+                                  <ol>
+                                  <li>Preheat a pancake griddle to 350 degrees F. Prepare the butter by leaving it out at room temperature.</li>
+                                  <li>In a medium bowl, whisk together the eggs and buttermilk. Add flour, baking soda, salt, and sugar and mix just until combined.</li>
+                                  <li>Grease your griddle with butter and pour in 1/2 cup of batter. When the batter hits the griddle, level it out with the back of a spoon or ice cream scoop.</li>
+                                  <li>Once your batter starts to bubble and the edges are set, flip your pancake and cook for another two minutes.</li>
+                                  <li>Repeat steps 3 and 4 for each pancake.Serve warm.</li>
+                                </ol>
+                                </p>
+                                <h3>Tips:</h3>
+                                <h4>1. Never overmix your batter! You want to mix the dry ingredients and wet ingredients separately before whisking them together in one bowl. Once they’re combined, your batter is ready.</h4>
+                                <h4>2. Make sure your griddle is hot enough! For this recipe, you want it to be 350 degrees F.</h4>
+                              </div><!-- modal_content -->
+                            </div><!-- modal_container -->
+                          </div>
+
+    </div><!-- back -->
+    <div class="bottom">
+      <img height="100px" width="200px" src="images\112-removebg-preview.png" alt="Egg logo"><!-- IDEA: img scr is 112.png -->
+      <h3>Contact Us:</h3>
+      <p>Mobile: +65 12345678</p>
+      <p>Address: 190 Antartica Road,#03-10</p>
+      <p>Antartica 159545.</p>
+      <h3>Terms & Condition:</h3>
+      <p><a href="Terms and Condition.html" target ="_blank">Click here for more infromation</a></p>
+      <hr style="width:20%;border:1px;">
+      <p>Copyright &copy; 2022 Eggoulo Inc. All right reserved.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eggoulo(Home)</title>
+    <link rel="stylesheet" href="homesample.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="animal_egg.css">
+    <link rel="stylesheet" href="lifecycle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="navigationcontrol.css">
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js" defer></script>
+    <link rel="stylesheet" href="sampledsd.css">
+    <link rel="icon" type="image/x-icon" href="vector-illustration-one-fried-egg-symbol-healthy-food-breakfast-graphic-design-contour-vector-illustration-one-fried-170092872-removebg-preview.png">
+
+  </head>
+  <body>
+    <div class="">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up" style="font-size:20px;color:white"></i></button>
+    </div>
+    <script type="text/javascript">
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <!-- The Modal -->
+    <div id="myModaln" class="modaln">
+
+      <!-- Modal content -->
+      <div class="modal-contentn">
+        <span class="closen">&times;</span>
+        <h2>Welcome, <span id = usernamee></span></h2>
+        <div class="news">
+        <div class="container">
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-spoon"></i></div>
+                <h3>1 Month Newsletter Subscription</h3>
+                <h4><sup>$</sup>5.73</h4>
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-coffee"></i></div>
+                <h3>12 Month/1 Year Newsletter Subscription</h3>
+                <h4><sup>$</sup>15.99</h4>
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-birthday-cake"></i></div>
+                <h3>2 - 3 Years Newsletter Subscription</h3>
+                <h4><sup>$</sup>16.00</h4>
+                <a href="#">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+          <p class="sub-details">Sign up and receive fresh EOG_G recipes every month to your inbox. As a subscriber to EOG_G, you may receive emails containing recipes, nutrition tips, contests, and promotions. </p>
+      </div>
+
+    </div></div>
+    <div id="modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <section>
+        <div class="container">
+          <div class="user signinBx">
+            <div class="imgBx"><img src="bakersbrew_classes_may2021_macarons_1x1_06.jpg" alt=""></div>
+              <div class="formBx">
+                <form class="" action="index.html" method="get">
+                  <h2>Sign In</h2>
+                  <input id="siusername" type="text"  placeholder="Username" required>
+                  <input type="password" name="pass" placeholder="Password" required minlength="8">
+                  <input type="submit" onclick="handleSubmit()" value="Log In" >
+                  <p class="signup">don't have an account? <a href="#" onclick="toggleForm();">Sign up.</a> </p>
+                </form>
+              </div>
+          </div>
+
+         <div class="user signupBx">
+
+              <div class="formBx">
+                <form class="" action="form.html" method="get">
+
+                  <h2>Create an account</h2>
+                  <input class="su_username" type="text"  placeholder="Username" required>
+                  <input type="email"  placeholder="Email Address" required>
+                  <input type="password" name="pass" placeholder="Create Password" required>
+                  <input type="password" name="cpass" placeholder="Confirm Password" required>
+                  <input type="submit" value="Sign Up" onclick="signup_function()">
+                  <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign In.</a> </p>
+                </form>
+              </div>
+              <div class="imgBx"><img src="1x1__0033_bakersbrew-bakingclasses-july2022-0593.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>
+
+      </div>
+
+    </div>
+    <div class="slideshow-container">
+      <div id="div1" class="primary-header flex">
+        <img class="logo" height="80px" width="160px" src="images\112-removebg-preview.png" alt="Egg logo"><!-- IDEA: img scr is 112.png -->
+
+        <button id="mobile-nav-toggle"class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" type="button"><div class="menu"></div><div class="menu"></div><div class="menu"></div></button>
+            <nav>
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation flex" id="nav" >
+                <li class="nav current"><a href="home.html">Home</a></li>
+                <li class="nav"><a href="skillsandrecipe1.html">Skills & Recipe</a></li>
+                <li class="nav"><a href="classes.html">Schedule</a></li>
+                <li id="login"><a href="#">Login</a></li>
+              </ul>
+            </nav>
+        </div>
+      <div class="slides fade">
+        <img id="image1" src="images\Excess-egg-consumption-linked-with-increased-risk-of-diabetes-study.jpg">
+        <div class="image1text">
+          <h1 style="color:white">EGG BIOLOGYYYYY</h1>
+          <h5 style="color:white">Think we're weak, no we're not!<br> WE'RE STRONG!</h5>
+          <br>
+          <a href="#lifecycle_title">Click Me :)</a>
+        </div>
+      </div>
+
+      <div class="slides fade">
+        <img id="image2" src="images\Basically-HardBoiled.webp">
+        <div class="image2text">
+          <h1 style="color:white">MASTERING EGGS</h1>
+          <h5 style="color:white">Delicious eggs...hmmm...<br>...Yummy..</h5>
+          <br>
+          <a href="skillsandrecipe1.html">Click Me :)</a>
+        </div>
+      </div>
+
+      <div class="slides fade">
+        <img id="image3" src="images\How-chickens-make-eggs__FocusFillWyIwLjAwIiwiMC4wMCIsMTIwMCw2Mjhd.jpg">
+        <div class="image3text">
+          <h1 style="color:white">LEARNING IS FUN</h1>
+          <h5 style="color:white">Come & Join us today<br>& get exclusive deals!!!</h5>
+          <br>
+          <a href="classes.html">Click Me :)</a>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script type="text/javascript">//see if can set timer
+    let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+
+    </script>
+       <h3 id="purpose" class="intro">ABOUT US</h3>
+  <div id="three">
+    <p id="details">EOG_G is a organisation meant to help people in terms of their lifestyle, cooking skills, education and many more.Not only do we provide cooking classes, we also provide recipes that will surely blows your mind . EOG_G have helped many well known chef to achieve the impossible as well as to broaden their knowledge in cooking.</p>
+  </div>
+
+  <div class="incase" onmouseover="typeWriter()">
+    <div class="wordsbox" >
+      <div class="text">
+        <div class="text1">
+          <h3 class="texts" >Message from EOG_G</h3>
+          <p id="texts"></p>
+        </div>
+      </div>
+    </div>
+</div>
+<script type="text/javascript">
+var i = 0;
+var txt = "       EOG_G is an organization that brings the world the love for food. We've always believed that everyone deserves to have a chance to eat delicious food & cook them. EOG_G is here to help you strive in your cooking skills, provides recipe.Everything you'll ever need is at EOG_G. So, hesitate no more, come join our family today! Best regards :)"/* The text */
+var speed = 200; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("texts").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+}
+}
+</script>
+  <div id="four">
+      <h3 id="industry">Industrial Data</h3>
+      <img id="data_chicks"src="images\Chick.jpg" alt="">
+      <div id="Industrial">
+        <p class="Industrial"><span>95,647</span> &nbsp;&nbsp;million eggs produced in 2021</p>
+        <p class="Industrial"><span>280.5</span> &nbsp;&nbsp;per capita U.S. egg consumption in 2021</p>
+        <p class="Industrial"><span>45.21</span> &nbsp;&nbsp;million hens in Iowa as of January 2022, the top U.S. egg producing state</p>
+        <p class="Industrial"><span>111.1</span> &nbsp;&nbsp;million cage-free hens in the U.S. as of January 2022</p>
+        <a class="Industrial_link" target="_blank" href="https://www.incredibleegg.org/about-us/industry-data"><input type="button" name="seemore" value="See More"></a>
+      </div>
+</div>
+
+  <h3 id="lifecycle_title">LIFE CYCLE OF A CHICKEN</h3>
+<div class="lifecycle">
+  <img id="chickenanimation" src="images\chicken3.gif" alt="">
+
+
+    <div class="popup" id="topleft" onclick="myFunction()"><p id="clear"><span id="ques">&#10068;</span><br>Stage 1</p>
+    <span class="popuptext" id="myPopup">A hen lays fertilised eggs.The hen will set on her eggs several times a day to keep them warm for about 21 days</span>
+  </div>
+  <script>
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+    </script>
+    <div class="popup1" id="topright" onclick="myFunction1()"><p id="clear"><span id="ques">&#10068;</span><br>Stage 2</p>
+    <span class="popuptext1" id="myPopup1">When it is time for the chick to hatch,it pecks holes in the shell with a bup on its beak called an egg tooth.A few days after the chick has hatched</span>
+  </div>
+  <script>
+  function myFunction1() {
+    var popup1 = document.getElementById("myPopup1");
+    popup1.classList.toggle("show1");
+  }
+    </script>
+    <div class="popup2" id="bottomleft" onclick="myFunction2()"><p id="clear"><span id="ques">&#10068;</span><br>Stage 3</p>
+    <span class="popuptext2" id="myPopup2">Baby chicks grow up fast.Young girls are called pullet and young boys are called cockerels.Soon they will be grown-up hens and rooster</span>
+  </div>
+  <script>
+  function myFunction2() {
+    var popup2 = document.getElementById("myPopup2");
+    popup2.classList.toggle("show2");
+  }
+    </script>
+
+    <div class="popup3" id="bottomright" onclick="myFunction3()"><p id="clear"><span id="ques">&#10068;</span><br>Stage 4</p>
+    <span class="popuptext3" id="myPopup3">Adult Rooster will fertilize Adult Hen and start having their own babies</span>
+    </div>
+    <script>
+    function myFunction3() {
+      var popup3 = document.getElementById("myPopup3");
+      popup3.classList.toggle("show3");
+    }
+      </script>
+</div>
+<h3 id="partofeggtitle">PARTS OF A EGG</h3>
+<div class="parts_of_eggs">
+  <div class="partofeggs">
+      <button class="eggparts_details" id="Shell">Shell</button>
+          <div class="eggpartscontent">
+          <p class="describe">Bumpy and grainy in texture, an eggshell is covered with as many as 17,000 tiny pores.
+             Eggshell is made almost entirely of calcium carbonate (CaCO3) crystals.
+             It is a semipermeable membrane, which means that air and moisture can pass through its pores.
+             The shell also has a thin outermost coating called the bloom or cuticle that helps keep out bacteria and dust.
+             <img id="eggy" src="C:\Users\Admin\OneDrive\Documents\Semester 1\Web Development\Assignment\images\eggcrosssection1.gif" alt=""> </p>
+          </div>
+
+      <button class="eggparts_details">Inner and Outer Membrane</button>
+          <div class="eggpartscontent">
+          <p class="describe">Lying between the eggshell and egg white, these two transparent protein membranes provide efficient defense against bacterial invasion.
+            If you give these layers a tug, you’ll find they’re surprisingly strong. They’re made partly of keratin, a protein that’s also in human hair.
+          <img id="eggy" src="C:\Users\Admin\OneDrive\Documents\Semester 1\Web Development\Assignment\images\eggcrosssection1.gif" alt=""> </p>
+          </div>
+
+      <button class="eggparts_details">Air Cell</button>
+          <div class="eggpartscontent">
+          <p class="describe">An air space forms when the contents of the egg cool and contract after the egg is laid.
+            The air cell usually rests between the outer and inner membranes at the egg’s larger end, and it accounts for the crater
+             you often see at the end of a hard-cooked egg. The air cell grows larger as an egg ages.
+           <img id="eggy" src="C:\Users\Admin\OneDrive\Documents\Semester 1\Web Development\Assignment\images\eggcrosssection1.gif" alt=""> </p>
+          </div>
+
+      <button class="eggparts_details">Albumen</button>
+          <div class="eggpartscontent">
+          <p class="describe">The egg white is known as the albumen, which comes from albus, the Latin word for “white.” Four alternating layers of thick and thin albumen contain approximately 40 different proteins, the main components of the egg white in addition to water.
+          <img id="eggy" src="C:\Users\Admin\OneDrive\Documents\Semester 1\Web Development\Assignment\images\eggcrosssection1.gif" alt=""> </p>
+          </div>
+
+      <button class="eggparts_details">Chalazae</button>
+          <div class="eggpartscontent">
+          <p class="describe">Opaque ropes of egg white, the chalazae hold the yolk in the center of the egg. Like little anchors, they attach the yolk’s casing to the membrane lining the eggshell. The more prominent they are, the fresher the egg.
+          <img id="eggy" src="C:\Users\Admin\OneDrive\Documents\Semester 1\Web Development\Assignment\images\eggcrosssection1.gif" alt=""> </p>
+          </div>
+
+      <button class="eggparts_details">Vitrlline Membrane</button>
+          <div class="eggpartscontent">
+          <p class="describe">The clear casing that encloses the yolk.
+          <img id="eggy" src="C:\Users\Admin\OneDrive\Documents\Semester 1\Web Development\Assignment\images\eggcrosssection1.gif" alt=""> </p>
+          </div>
+
+      <button class="eggparts_details">Yolk</button>
+          <div class="eggpartscontent">
+          <p class="describe">The yolk contains less water and more protein than the white, some fat, and most of the vitamins and minerals of the egg. These include iron, vitamin A, vitamin D, phosphorus, calcium, thiamine, and riboflavin. The yolk is also a source of lecithin, an effective emulsifier.
+            Yolk color ranges from just a hint of yellow to a magnificent deep orange, according to the feed and breed of the hen.
+          <img id="eggy" src="C:\Users\Admin\OneDrive\Documents\Semester 1\Web Development\Assignment\images\eggcrosssection1.gif" alt=""> </p>
+          </div>
+</div>
+
+      <script>
+      var acc = document.getElementsByClassName("eggparts_details");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("bactive");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+      }
+      </script>
+</div>
+
+
+<!-- NOTE: Animal eggs -->
+  <div class="varieties">
+    <h2 class="voe">VARITIES OF EGGS</h2>
+  <!-- NOTE: Chicken -->
+    <div class="animals chicken">
+      <img class="chick" src="images\6376541.png"
+        alt="Chicken"><p class="nothing">Chicken<br><span id="arrow">&#128315;</span></p>
+      <div class="text_overlay">
+        <div class="text_tittle">Chicken</div>
+        <p class="text_description">One CHICKEN egg,contains:<br>72 Calories<br>4.75 g Fat<br>1.55 g Saturated Fat<br>0.4 g Carbohydrates<br>6.3 g Protein<br>
+          <a  class="animal_link" target="_blank" href="https://www.livestrong.com/article/273942-chicken-egg-nutrition/">CLICK ME!!!</a></p>
+      </div>
+    </div>
+  <!-- NOTE: Duck -->
+    <div class="animals duck">
+      <img class="chick" src="images\Duck_animal_5830.png"
+        alt="Duck"><p class="nothing">Duck<br><span id="arrow">&#128315;</span></p>
+      <div class="text_overlay">
+        <div class="text_tittle">Duck</div>
+        <p class="text_description">One DUCK eggs,contains:<br>Calories: 130<br>Protein: 9 grams<br>Fat: 10 grams<br>Carbohydrates: 1 gram<br>Fiber: 0 grams<br>Sugar: 1 gram<br>
+          <a class="animal_link" target="_blank" href="https://www.webmd.com/diet/health-benefits-duck-eggs#1">CLICK ME!!!</a></p>
+      </div>
+    </div>
+  <!-- NOTE: Turkey -->
+    <div class="animals turkey">
+      <img class="chick" src="images\1000_F_138263632_OTbbHuSvDBQWmQQ5HvGtBCQ0baiJx1zB-removebg-preview.png"
+        alt="Turkey"><p class="nothing">Turkey<br><span id="arrow">&#128315;</span></p>
+      <div class="text_overlay">
+        <div class="text_tittle">Turkey</div>
+        <p class="text_description">One TURKEY eggs,contains <br>135 calories<br>10.8 grams of protein<br>933 milligrams of cholesterol<br>
+        <a class="animal_link" target="_blank" href="https://a-z-animals.com/blog/turkey-eggs-vs-chicken-eggs-what-are-the-differences/">CLICK ME!!!</a></p>
+      </div>
+    </div>
+  <!-- NOTE: Goose -->
+    <div class="animals goose">
+      <img class="chick" src="images\geese-goose-grey-white-icon-833703-removebg-preview.png"
+        alt="Goose"><p class="nothing">Goose<br><span id="arrow">&#128315;</span></p>
+      <div class="text_overlay">
+        <div class="text_tittle">Goose</div>
+        <p class="text_description">One GOOSE egg,contains:<br>266 calories<br>19.11 g of total fat<br>with 5.1 g being saturated<br>
+        <a class="animal_link" target="_blank" href="https://www.livestrong.com/article/528020-nutritional-stats-on-chicken-eggs-vs-goose-eggs/">CLICK ME!!!</a></p>
+      </div>
+    </div>
+  <!-- NOTE: Caviar -->
+    <div class="animals caviar">
+      <img class="chick" src="images\fish-icon-vector-23190142-removebg-preview.png"
+         alt="Caviar"><p class="nothing">Caviar<br><span id="arrow">&#128315;</span></p>
+      <div class="text_overlay">
+        <div class="text_tittle">Caviar</div>
+        <p class="text_description">One CAVIAR egg,contains:<br>Calories 71,Total Fat 5g (8%DV)<br>Saturated Fat 1g (6%DV),Cholest 165mg (55%DV)<br>Sodium 420mg (18%DV), Total Carb. 1g (0%DV)<br>Protein 7g, Vitamin A (5%DV), Vitamin C (0%DV), Calcium (8%DV), Iron (18%DV)<br>
+        <a class="animal_link" target="_blank" href="https://caviarstar.com/blogcaviar-nutrition-is-caviar-good-for-you/#:~:text=Black%20and%20Red%20Caviar%20Nutrition%20Facts&text=165mg%20(55%25DV)%2C,Iron%20(18%25DV).">CLICK ME!!!</a>
+        </p>
+      </div>
+    </div>
+  <!-- NOTE: Ostrich -->
+    <div class="animals ostrich">
+      <img class="chick" src="images\2424189.png"
+        alt="Ostrich"><p class="nothing">Ostrich<br><span id="arrow">&#128315;</span></p>
+      <div class="text_overlay">
+        <div class="text_tittle">Ostrich</div>
+        <p class="text_description">One large OSTRICH egg, contains:<br>approximately 2000 calories<br>235 grams of protein<br>100 grams of fat<br>
+          <a class="animal_link" target="_blank" href="https://www.livestrong.com/article/345784-nutritional-facts-on-ostrich-eggs/">CLICK ME!!!</a>
+        </p>
+      </div>
+    </div>
+  <!-- NOTE: Crocodile -->
+  <div class="animals crocodile">
+    <img class="chick" src="images\74440441-crocodile-icon-removebg-preview.png"
+      alt="Crocodile"><p class="nothing">Crocodile<br><span id="arrow">&#128315;</span></p>
+    <div class="text_overlay">
+      <div class="text_tittle">Crocodile</div>
+      <p class="text_description">One CROCODILE egg,contains;<br>228 calories<br>1 g carbs<br>17 g fats<br>17 g protein<br>
+        <a  class="animal_link" target="_blank" href="https://www.myfitnesspal.com/food/calories/generic-egg-crocodile-yolk-556989956">CLICK ME!!!</a></p>
+    </div>
+  </div>
+  <!-- NOTE: EMU -->
+  <div class="animals emu">
+    <img class="chick" src="images\962376-200.png"
+      alt="Emu"><p class="nothing">Emu<br><span id="arrow">&#128315;</span></p>
+    <div class="text_overlay">
+      <div class="text_tittle">Emu</div>
+      <p class="text_description">One EMU egg contains:<br>670 calories<br>4 g crabs<br>40 g fats<br>24 g protein<br>
+        <a  class="animal_link" target="_blank" href="https://www.myfitnesspal.com/food/calories/generic-emu-egg-193939519">CLICK ME!!!</a></p>
+    </div>
+  </div>
+  <!-- NOTE: Gull -->
+  <div class="animals gull">
+    <img class="chick" src="images\seagull_1991792-removebg-preview.png"
+      alt="Gull"><p class="nothing">Gull<br><span id="arrow">&#128315;</span></p>
+    <div class="text_overlay">
+      <div class="text_tittle">Gull</div>
+      <p class="text_description">Gull eggs are rich in vitamin D,<br> making them perfect for supplementing in places<br> that don’t get a lot of sun.<br> Vitamin D boosts your mood and<br> enhances your immune system against illnesses.<br>
+        <a  class="animal_link" target="_blank" href="https://www.saudereggs.com/blog/types-of-edible-eggs/">CLICK ME!!!</a></p>
+    </div>
+  </div>
+  <!-- NOTE: Octopus -->
+  <div class="animals octopus">
+    <img class="chick" src="images\1864602.png"
+      alt="Octopus"><p class="nothing">Octopus<br><span id="arrow">&#128315;</span></p>
+    <div class="text_overlay">
+      <div class="text_tittle">Octopus</div>
+      <p class="text_description">Octopus eggs are popular in JAPAN<br> Instead of having a hard shell with yolk and whites on the inside, <br>one large egg sac has several<br> little eggs that look and feel like long pieces of rice.<br>
+        <a  class="animal_link" target="_blank" href="https://www.saudereggs.com/blog/types-of-edible-eggs/">CLICK ME!!!</a></p>
+    </div>
+  </div>
+  <!-- NOTE: Pigeon -->
+  <div class="animals pigeon">
+    <img class="chick" src="images\2683154.png"
+      alt="Pigeon"><p class="nothing">Pigeon<br><span id="arrow">&#128315;</span></p>
+    <div class="text_overlay">
+      <div class="text_tittle">Pigeon</div>
+      <p class="text_description">One PIGEON egg,contains:<br>Protein, 14 g<br>Fat, 13.5g,<br>Carbohydrates, 1.5 g<br>Ash, 1.3 g<br>Water, 74 gr<br>Calorie content, 160 kcal<br>
+        <a  class="animal_link" target="_blank" href="https://healthy-food-near-me.com/pigeon-eggs-product-description-benefits-and-harm-to-human-health/">CLICK ME!!!</a></p>
+    </div>
+  </div>
+  <!-- NOTE: Quail -->
+  <div class="animals quail">
+    <img class="chick" src="images\quail-farm-icon-outline-style-vector-web-design-isolated-white-background-209205042-removebg-preview.png"
+      alt="Quail"><p class="nothing">Quail<br><span id="arrow">&#128315;</span></p>
+    <div class="text_overlay">
+      <div class="text_tittle">Quail</div>
+      <p class="text_description">One QUAIL egg,contains:<br>Calories: 14; Protein:1g; Fat:1g; Carbs:0g<br>Choline:4% Daily Value(DV)<br>Riboflavin:6%, Folate:2%<br>Pantothenic acid:3%<br>Vitamin A:2%, Vitamin B12:6%,Iron:2%, Phosphorus:2%, Selenium:5%<br>
+        <a  class="animal_link" target="_blank" href="https://www.healthline.com/nutrition/quail-eggs-benefits#nutrition">CLICK ME!!!</a></p>
+    </div>
+  </div>
+  </div>
+
+  <div class="feedback">
+    <p class="feedback_title">We would like to hear from you! Any feedback?</p>
+    <label>
+      <p><form class="" action="index.html" method="post">
+</label></p>
+<textarea name="feedback" rows="10" cols="100" placeholder="Feedback...."></textarea>
+<input type="submit" id="submit" name="" value="Submit">
+      </form>
+  </div>
+
+
+  <div class="bottom">
+    <img height="100px" width="200px" src="images\112-removebg-preview.png" alt="Egg logo"><!-- IDEA: img scr is 112.png -->
+    <div class="connectall">
+    <h3>Partnership:</h3>
+    <img id="logo" src="images\logotype-set_53876-12050-removebg-preview.png" alt="loogo">
+    <h3 id="Connect">Connect with Us: </h3>
+    <a target="_blank"href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a target="_blank"href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a>
+    <a target="_blank"href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    <a target="_blank"href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    <a target="_blank"href="https://www.reddit.com/register/" class="fa fa-reddit"></a>
+  </div>
+  <div class="" style="float:right;margin-top:-20%;margin-right:20%;">
+    <h3>Contact Us:</h3>
+    <p>Mobile: +65 12345678</p>
+    <p>Address: 190 Antartica Road,#03-10</p>
+    <p>Antartica 159545.</p>
+    <h3>Terms & Condition:</h3>
+    <p><a href="Terms and Condition.html" target ="_blank">Click here for more infromation</a></p>
+    <hr style="width:20%;border:1px;">
+    <p>Copyright &copy; 2022 Eggoulo Inc. All right reserved.</p>
+  </div>
+  </div>
+  </body>
+</html>
